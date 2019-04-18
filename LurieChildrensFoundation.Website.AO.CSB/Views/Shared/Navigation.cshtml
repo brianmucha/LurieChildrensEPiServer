@@ -1,0 +1,14 @@
+﻿@using EPiServer.Web;
+
+@using LurieChildrensFoundation.AO._Base.Models.Pages;
+@using LurieChildrensFoundation.AO._Base.Models.ViewModels;
+@using LurieChildrensFoundation._Base.Helpers;
+
+@model IAOBasePageViewModel<AOBasePage>
+
+<ul class="nav">
+	@Html.MenuList(
+		SiteDefinition.Current.StartPage, 
+		@<li class="@(item.Selected ? "active" : null)">@Html.PageLink(item.Page, null, null)</li> 
+	)
+</ul>

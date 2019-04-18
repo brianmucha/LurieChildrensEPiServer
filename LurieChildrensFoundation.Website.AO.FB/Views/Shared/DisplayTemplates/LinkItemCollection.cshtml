@@ -1,0 +1,12 @@
+﻿@using EPiServer.SpecializedProperties;
+@model LinkItemCollection
+
+@if (Model != null)
+{
+	<div class="LinkList">
+	@foreach (LinkItem item in Model)
+	{
+		<a class="LinkItem" href="@item.Href" title="@item.Title">@item.Text</a>
+	}
+	</div>
+}

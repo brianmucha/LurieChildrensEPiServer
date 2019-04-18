@@ -1,0 +1,43 @@
+﻿
+html {
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+body {
+	font-size: 1.8rem;
+}
+
+ul.nav {
+	list-style-type: none;
+	display: block;
+	margin: 1rem 0;
+	padding: 0;
+}
+
+ul.nav li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+ul.nav li.active {
+	font-weight: bold;
+}
+
+ul.nav li a {
+	display: block;
+	text-decoration: none;
+	padding: 2rem 4rem;
+	border: 1px solid #999999;
+}
+
+ul.nav li a:hover {
+	background-color: #CCCCCC;
+}
+
+div.sidebar {
+	border: 1px solid #999999;
+	max-width: 25rem;
+	padding: 1rem;
+}

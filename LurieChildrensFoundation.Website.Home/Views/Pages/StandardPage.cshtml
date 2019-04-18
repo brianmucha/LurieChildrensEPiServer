@@ -1,0 +1,16 @@
+﻿@using EPiServer.Cms;
+@using EPiServer.Web.Mvc.Html;
+
+@using LurieChildrensFoundation.Home.Models.Pages;
+@using LurieChildrensFoundation.Home.Models.ViewModels;
+
+@model StandardPageViewModel<StandardPage>
+@{ Layout = "~/Views/Shared/Layouts/MainNavigation.cshtml"; }
+
+<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+<div>
+	@Html.PropertyFor(model => model.CurrentPage.MainBody)
+</div>
+<div>
+	@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+</div>

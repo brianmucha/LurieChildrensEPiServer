@@ -1,0 +1,19 @@
+﻿@using EPiServer.Cms;
+@using EPiServer.Web.Mvc.Html;
+
+@using LurieChildrensFoundation.AO.FB.Models.Pages;
+@using LurieChildrensFoundation.AO.FB.Models.ViewModels;
+
+@model EventPageViewModel<EventPage>
+@{ Layout = "~/Views/Shared/Layouts/MainNavigation.cshtml"; }
+
+<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+<div>
+	@Html.PropertyFor(model => model.CurrentPage.EventDate)
+</div>
+<div>
+	@Html.PropertyFor(model => model.CurrentPage.Summary)
+</div>
+<div>
+	@Html.PropertyFor(model => model.CurrentPage.MainBody)
+</div>

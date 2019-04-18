@@ -1,0 +1,49 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@using LurieChildrensFoundation.AO._Base.Models.ViewModels;
+@using LurieChildrensFoundation.AO._Base.Models.Pages;
+@using LurieChildrensFoundation._Base.Helpers;
+
+@model IAOBasePageViewModel<AOBasePage>
+@{ Layout = "~/Views/Shared/Layouts/_Root.cshtml"; }
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-lg-2">
+			L O G O
+		</div>
+		<div class="col-md-8 col-lg-10">
+			@{Html.RenderPartial("Navigation", Model);}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-lg-2">
+			<div class="sidebar">
+				<ul class="subnav">
+					@Html.MenuList(ContentReference.StartPage, SubMenuTemplate)
+				</ul>
+			</div>
+		</div>
+		<div class="col-xs-8 col-md-10">
+			@RenderBody()
+		</div>
+	</div>
+</div>
+
+@helper SubMenuTemplate(HtmlHelperMenu.MenuItem menuItem)
+{
+	<li>
+		@if (menuItem.Selected)
+		{
+			<strong>@Html.PageLink(menuItem.Page)</strong>
+			<ul>
+				@Html.MenuList(menuItem.Page.ContentLink, SubMenuTemplate)
+			</ul>
+		}
+		else
+		{
+			@Html.PageLink(menuItem.Page)
+		}
+	</li>
+}

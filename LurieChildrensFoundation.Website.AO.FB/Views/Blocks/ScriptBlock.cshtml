@@ -1,0 +1,13 @@
+﻿@using EPiServer.Editor;
+@using LurieChildrensFoundation.AO.FB.Models.Blocks;
+
+@model ScriptBlock
+ 
+@if (PageEditing.PageIsInEditMode)
+{
+	<code>@Html.PropertyFor(model => model.Code)</code>
+}
+else
+{
+	@Html.Raw(Model.Code)
+}

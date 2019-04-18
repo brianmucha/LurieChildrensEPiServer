@@ -1,0 +1,16 @@
+﻿@using EPiServer.Cms;
+@using EPiServer.Web.Mvc.Html;
+
+@using LurieChildrensFoundation.Home.Models.Pages;
+@using LurieChildrensFoundation.Home.Models.ViewModels;
+
+@model EventPageViewModel<EventPage>
+@{ Layout = "~/Views/Shared/Layouts/MainNavigation.cshtml"; }
+
+<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+<div>
+	@Html.PropertyFor(model => model.CurrentPage.EventDate)
+</div>
+<div>
+	@Html.PropertyFor(model => model.CurrentPage.Description)
+</div>

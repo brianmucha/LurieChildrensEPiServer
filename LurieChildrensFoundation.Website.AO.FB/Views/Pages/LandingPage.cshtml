@@ -1,0 +1,19 @@
+﻿@using EPiServer.Cms;
+@using EPiServer.Web.Mvc.Html;
+
+@using LurieChildrensFoundation.AO.FB.Models.Pages;
+@using LurieChildrensFoundation.AO.FB.Models.ViewModels;
+
+@model LandingPageViewModel<LandingPage>
+@{ Layout = "~/Views/Shared/Layouts/MainNavigation.cshtml"; }
+
+<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+<p>@Html.PropertyFor(model => model.TestPropertyOne)</p>
+<p>@Html.PropertyFor(model => model.TestPropertyTwo)</p>
+
+<div>
+	@Html.PropertyFor(model => model.CurrentPage.MainBody)
+</div>
+<div>
+	@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+</div>

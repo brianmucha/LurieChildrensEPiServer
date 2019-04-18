@@ -1,0 +1,14 @@
+﻿@using LurieChildrensFoundation.AO.CRFJB.Models.ViewModels;
+
+@model SidebarBlockViewModel
+
+@Html.PropertyFor(model => model.Heading)
+
+@foreach (var page in Model.Pages)
+{
+	<div class="listResult">
+		<h3>
+			@Html.PageLink(page)
+		</h3>
+	</div>
+}

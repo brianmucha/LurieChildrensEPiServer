@@ -1,0 +1,17 @@
+﻿@using EPiServer.Editor;
+@using LurieChildrensFoundation.AO.FB.Models.Blocks;
+
+@model LightboxBlock
+
+@if (PageEditing.PageIsInEditMode)
+{
+	<code>@Html.PropertyFor(model => model.Content)</code>
+	<code>@Html.PropertyFor(model => model.Code)</code>
+	<code>@Html.PropertyFor(model => model.Styles)</code>
+}
+else
+{
+	@Html.Raw(Model.Content)
+	@Html.Raw(Model.Code)
+	@Html.Raw(Model.Styles)
+}
