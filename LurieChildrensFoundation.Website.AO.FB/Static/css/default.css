@@ -63,7 +63,7 @@ div.image-responsive {
 		opacity: .8;
 	}
 
-div.layout.col {
+div.layout .col {
 	padding-right: 0;
 	padding-left: 0;
 }
