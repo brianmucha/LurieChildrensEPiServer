@@ -188,6 +188,8 @@
     <Compile Include="Controllers\Blocks\SidebarBlockController.cs" />
     <Compile Include="Controllers\Blocks\PageListBlockController.cs" />
     <Compile Include="Controllers\Pages\StandardPageController.cs" />
+    <Compile Include="Models\Blocks\RichTextBlock.cs" />
+    <Compile Include="Models\Blocks\HeroImageBlock.cs" />
     <Compile Include="Models\Blocks\SidebarBlock.cs" />
     <Compile Include="Models\Blocks\LightboxBlock.cs" />
     <Compile Include="Models\Blocks\PageListBlock.cs" />

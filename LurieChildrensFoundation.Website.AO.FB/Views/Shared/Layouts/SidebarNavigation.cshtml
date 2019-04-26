@@ -4,16 +4,16 @@
 @model IAOBasePageViewModel<AOBasePage>
 @{Layout = "~/Views/Shared/Layouts/_Root.cshtml";}
 
-<div class="main-content container-fluid">
-	<div class="row content">
-		<div class="col-md-4 col-lg-2">
+<div class="layout container">
+	<div class="row">
+		<div class="layout col col-sm-3 col-12">
 			<div class="sidebar">
 				<ul class="subnav">
 					@*Html.MenuList(ContentReference(AOBasePage), SubMenuTemplate)*@
 				</ul>
 			</div>
 		</div>
-		<div class="col-xs-8 col-md-10">
+		<div class="layout col col-sm-9 col-12">
 			@RenderBody()
 		</div>
 	</div>

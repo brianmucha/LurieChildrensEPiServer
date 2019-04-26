@@ -5,7 +5,10 @@ using EPiServer.DataAnnotations;
 
 namespace LurieChildrensFoundation.Home.Models.Blocks
 {
-	[ContentType(DisplayName = "LightboxBlock", GUID = "76c90ec0-4241-42d5-98ed-a856993af3e9", Description = "")]
+	[ContentType(
+		DisplayName = "Lightbox Block",
+		Description = "", 
+		GUID = "76c90ec0-4241-42d5-98ed-a856993af3e9")]
 	public class LightboxBlock : BlockData
 	{
 		[CultureSpecific]

@@ -9,13 +9,10 @@
 
 <!doctype html>
 <html lang="en">
-
 <head>
-
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=10" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 	<title>@Model.CurrentPage.MetaTitle - Lurie Children's Hospital</title>
 
 	@if (!string.IsNullOrWhiteSpace(Model.CurrentPage.MetaDescription))
@@ -29,6 +26,7 @@
 
 	<link rel="stylesheet" href="~/Static/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="~/Static/css/default.css" />
+	<link rel="stylesheet" href="~/Static/css/fonts.css" />
 
 	<link rel="shortcut icon" href="~/Static/images/favicon/favicon.ico" />
 	<link rel="shortcut icon" href="~/Static/images/favicon/favicon-196.png" sizes="196x196" />
@@ -41,21 +39,33 @@
 	<link rel="apple-touch-icon" href="~/Static/images/favicon/favicon-120.png" sizes="120x120" />
 	<link rel="apple-touch-icon" href="~/Static/images/favicon/favicon-152.png" sizes="152x152" />
 	<link rel="apple-touch-icon" href="~/Static/images/favicon/favicon-180.png" sizes="180x180" />
-
 </head>
-
 
 <body>
 
 	<header>
-		<div class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#"><img class="logo-main" src="~/Static/images/logo-foundersboard.png" alt="Founders Board Logo" /></a>
+		<div class="layout container">
+			<div class="row">
+				<div class="tools col-12">
+					<a href="">Members</a>
+					<a href="">Contact Us</a>
+					<a class="donate" href="">Donate</a>
 				</div>
-				<ul class="nav navbar-nav">
-					@Html.MenuList(ContentReference.StartPage, NavigationTemplate)
-				</ul>
+			</div>
+			<div class="row">
+				<div class="logo col-10 col-sm-4 col-lg-3">
+					<a href="index.htm"><img class="logo-main" src="./Static/images/logo-foundersboard.png" /></a>
+				</div>
+				<div class="navigation col-2 col-sm-8 col-lg-9">
+					<div class="mobile">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<ul class="nav">
+						@Html.MenuList(ContentReference.StartPage, NavigationTemplate)
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -109,6 +119,8 @@
 </body>
 
 </html>
+
+@Html.RenderEPiServerQuickNavigator()
 
 @helper NavigationTemplate(HtmlHelperMenu.MenuItem menuItem)
 {

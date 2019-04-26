@@ -17,14 +17,6 @@ namespace LurieChildrensFoundation._Base.Models.Pages
 		/* ********** Content Tab ********** */
 
 		[Display(
-			Name = "Main body",
-			Description = "The main body will be shown in the main content area of the page, using the XHTML-editor you can insert for example text, images and tables.",
-			GroupName = Global.GroupNames.Content,
-			Order = 20)]
-		[CultureSpecific]
-		public virtual XhtmlString MainBody { get; set; }
-
-		[Display(
 			Name = "Main Content",
 			Description = "The main content will be shown in the main content area of the page, using the XHTML-editor you can insert for example text, images and tables.",
 			GroupName = Global.GroupNames.Content,

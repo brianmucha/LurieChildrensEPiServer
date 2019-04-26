@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using EPiServer.Core;
-using EPiServer.DataAbstraction;
+﻿using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
 using LurieChildrensFoundation.AO._Base.Models.Pages;
@@ -17,6 +15,5 @@ namespace LurieChildrensFoundation.AO.FB.Models.Pages
 	[ImageUrl("~/ClientResources/Images/StandardPage.png")]
 	public class StandardPage : AOStandardPage
 	{
-
 	}
 }

@@ -1,9 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
-
-using LurieChildrensFoundation.AO._Base.Models.Pages;
 
 namespace LurieChildrensFoundation.AO._Base.Models.Pages
 {
@@ -12,6 +11,5 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 	/// </summary>
 	public class AOStandardPage : AOBasePage
 	{
-
 	}
 }

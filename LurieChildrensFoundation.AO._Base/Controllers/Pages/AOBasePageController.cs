@@ -17,7 +17,7 @@ namespace LurieChildrensFoundation.AO._Base.Controllers
 		public AOBasePageViewModel<T> Create<T>(T currentPage) where T : AOBasePage
 		{
 			var viewModel = AOBasePageViewModel.Create(currentPage);
-			viewModel.TestPropertyOne = "This is a ViewModel property populated by the controller.";
+			viewModel.ViewModelPropertyBase = "This is a ViewModel property populated by the controller.";
 
 			return viewModel;
 		}

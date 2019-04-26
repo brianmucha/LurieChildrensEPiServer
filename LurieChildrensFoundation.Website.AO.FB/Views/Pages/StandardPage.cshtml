@@ -5,16 +5,26 @@
 @using LurieChildrensFoundation.AO.FB.Models.ViewModels;
 
 @model StandardPageViewModel<StandardPage>
-@{ Layout = "~/Views/Shared/Layouts/MainNavigation.cshtml"; }
+@{ Layout = "~/Views/Shared/Layouts/SidebarNavigation.cshtml"; }
 
 <article>
-	<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
-	<p>@Html.PropertyFor(model => model.TestPropertyOne)</p>
-	<p>@Html.PropertyFor(model => model.TestPropertyTwo)</p>
-	<div>
-		@Html.PropertyFor(model => model.CurrentPage.MainBody)
-	</div>
-	<div>
-		@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+	<div class="layout container">
+		<div class="row">
+			<div class="col-12">
+				<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+				<p>@Html.PropertyFor(model => model.ViewModelProperty)</p>
+				<p>@Html.PropertyFor(model => model.ViewModelPropertyBase)</p>
+			</div>
+		</div>
 	</div>
 </article>
+
+<section>
+	<div class="layout container">
+		<div class="row">
+			<div class="col-12">
+				@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+			</div>
+		</div>
+	</div>
+</section>

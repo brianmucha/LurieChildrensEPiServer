@@ -1,7 +1,7 @@
 ﻿using EPiServer.Core;
 
 using LurieChildrensFoundation.AO._Base.Models.Pages;
-/*
+
 namespace LurieChildrensFoundation.AO._Base.Models.ViewModels
 {
 	/// <summary>
@@ -20,18 +20,21 @@ namespace LurieChildrensFoundation.AO._Base.Models.ViewModels
 			return new AOStandardPageViewModel<T>(page);
 		}
 	}
-	
+
 	/// <summary>
 	/// Defines a Page View Model for a <see cref="AOStandardPage"/>.
 	/// </summary>
-	public class AOStandardPageViewModel<T> : AOBasePageViewModel<T> where T : AOStandardPage
+	public class AOStandardPageViewModel<T> : IAOBasePageViewModel<T> where T : AOStandardPage
 	{
-		public AOStandardPageViewModel(T currentPage) : base(currentPage)
+		public AOStandardPageViewModel(T currentPage)
 		{
 			CurrentPage = currentPage;
 		}
 
-		new public T CurrentPage { get; private set; }
+		public T CurrentPage { get; set; }
+//		public LayoutModel Layout { get; set; }
+		public IContent Section { get; set; }
+
+		public string ViewModelPropertyBase { get; set; }
 	}
 }
-*/

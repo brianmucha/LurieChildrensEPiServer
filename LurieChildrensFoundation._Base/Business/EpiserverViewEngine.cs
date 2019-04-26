@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LurieChildrensFoundation._Base.Business
+namespace LurieChildrensFoundation._Base.Models
 {
 	public class EpiserverViewEngine : System.Web.Mvc.RazorViewEngine
 	{

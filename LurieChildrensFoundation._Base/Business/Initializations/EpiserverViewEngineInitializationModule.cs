@@ -3,7 +3,7 @@ using System.Linq;
 using EPiServer.Framework;
 using EPiServer.Framework.Initialization;
 
-namespace LurieChildrensFoundation._Base.Business.Initializations
+namespace LurieChildrensFoundation._Base.Models.Initializations
 {
 	[InitializableModule]
 	[ModuleDependency(typeof(EPiServer.Web.InitializationModule))]

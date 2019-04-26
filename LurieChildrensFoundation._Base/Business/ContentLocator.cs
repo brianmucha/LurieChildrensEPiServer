@@ -6,7 +6,7 @@ using EPiServer;
 using EPiServer.Core;
 using EPiServer.Filters;
 
-namespace LurieChildrensFoundation._Base.Business
+namespace LurieChildrensFoundation._Base.Models
 {
 	public class ContentLocator
 	{

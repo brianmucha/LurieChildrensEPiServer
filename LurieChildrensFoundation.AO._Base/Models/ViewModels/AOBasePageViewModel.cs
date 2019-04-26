@@ -35,7 +35,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.ViewModels
 //		public LayoutModel Layout { get; set; }
 		public IContent Section { get; set; }
 
-		public string TestPropertyOne { get; set; }
+		public string ViewModelPropertyBase { get; set; }
 	}
 }
  

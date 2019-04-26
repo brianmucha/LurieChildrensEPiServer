@@ -1,19 +1,40 @@
-﻿@using EPiServer.Cms;
-@using EPiServer.Web.Mvc.Html;
+﻿@using EPiServer.Web.Mvc.Html;
 
 @using LurieChildrensFoundation.AO.FB.Models.Pages;
 @using LurieChildrensFoundation.AO.FB.Models.ViewModels;
 
 @model LandingPageViewModel<LandingPage>
-@{ Layout = "~/Views/Shared/Layouts/MainNavigation.cshtml"; }
+@{Layout = "~/Views/Shared/Layouts/FullWidth.cshtml";}
 
-<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
-<p>@Html.PropertyFor(model => model.TestPropertyOne)</p>
-<p>@Html.PropertyFor(model => model.TestPropertyTwo)</p>
+<section class="hero">
+	<div class="image-responsive">
+		<div class="content">
+			<h1>@Html.PropertyFor(model => model.CurrentPage.MainHeadline)</h1>
+			<h3>@Html.PropertyFor(model => model.CurrentPage.SubHeadline)</h3>
+			<p>@Html.PropertyFor(model => model.CurrentPage.ShortText)</p>
+		</div>
+		@Html.PropertyFor(model => model.CurrentPage.MainImage)
+	</div>
+</section>
 
-<div>
-	@Html.PropertyFor(model => model.CurrentPage.MainBody)
-</div>
-<div>
-	@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
-</div>
+<article>
+	<div class="layout container">
+		<div class="row">
+			<div class="col-12">
+				<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+				<p>@Html.PropertyFor(model => model.ViewModelProperty)</p>
+				<p>@Html.PropertyFor(model => model.ViewModelPropertyBase)</p>
+			</div>
+		</div>
+	</div>
+</article>
+
+<section>
+	<div class="layout container">
+		<div class="row">
+			<div class="col-12">
+				@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+			</div>
+		</div>
+	</div>
+</section>

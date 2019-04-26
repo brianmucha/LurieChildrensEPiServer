@@ -5,11 +5,10 @@ using LurieChildrensFoundation.AO._Base.Models.ViewModels;
 
 namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 {
-
 	/// <summary>
 	/// Returns a Page View Model for a <see cref="EventPage"/>.
 	/// </summary>
-	public class EventPageViewModel : AOBasePageViewModel
+	public class EventPageViewModel : AOEventPageViewModel
 	{
 		/// <summary>
 		/// Returns a PageViewModel of type <typeparam name="T"/>.
@@ -26,7 +25,7 @@ namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 	/// <summary>
 	/// Defines a Page View Model for a <see cref="EventPage"/>.
 	/// </summary>
-	public class EventPageViewModel<T> : AOBasePageViewModel<T> where T : EventPage
+	public class EventPageViewModel<T> : AOEventPageViewModel<T> where T : EventPage
 	{
 		public EventPageViewModel(T currentPage) : base(currentPage)
 		{
@@ -34,5 +33,6 @@ namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 		}
 
 		new public T CurrentPage { get; private set; }
+		public string ViewModelProperty { get; set; }
 	}
 }

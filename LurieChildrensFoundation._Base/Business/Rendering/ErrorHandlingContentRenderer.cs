@@ -11,7 +11,7 @@ using EPiServer.Security;
 
 using EPiServer.Web.Mvc;
 
-namespace LurieChildrensFoundation._Base.Business.Rendering
+namespace LurieChildrensFoundation._Base.Models.Rendering
 {
 	/// <summary>
 	/// Wraps an MvcContentRenderer and adds error handling to ensure that blocks and other content

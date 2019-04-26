@@ -6,7 +6,7 @@ using EPiServer.Core;
 using EPiServer.Filters;
 using EPiServer.Web.Mvc;
 
-using LurieChildrensFoundation._Base.Business;
+using LurieChildrensFoundation._Base.Models;
 using LurieChildrensFoundation.AO.CRFJB.Models.Blocks;
 using LurieChildrensFoundation.AO.CRFJB.Models.ViewModels;
 

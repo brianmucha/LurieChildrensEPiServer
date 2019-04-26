@@ -6,7 +6,7 @@ using EPiServer.Framework.Web;
 using EPiServer.ServiceLocation;
 using EPiServer;
 
-namespace LurieChildrensFoundation._Base.Business
+namespace LurieChildrensFoundation._Base.Models
 {
 	/// <summary>
 	/// Extension methods for content .

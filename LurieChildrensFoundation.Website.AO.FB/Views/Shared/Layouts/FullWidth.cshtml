@@ -1,0 +1,13 @@
+﻿@using LurieChildrensFoundation.AO._Base.Models.ViewModels;
+@using LurieChildrensFoundation.AO._Base.Models.Pages;
+
+@model IAOBasePageViewModel<AOBasePage>
+@{Layout = "~/Views/Shared/Layouts/_Root.cshtml";}
+
+<div class="layout container-fluid">
+	<div class="row">
+		<div class="layout col-12">
+			@RenderBody()
+		</div>
+	</div>
+</div>

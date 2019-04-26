@@ -8,7 +8,7 @@ namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 	/// <summary>
 	/// Returns a Page View Model for a <see cref="StandardPage"/>.
 	/// </summary>
-	public class StandardPageViewModel : AOBasePageViewModel
+	public class StandardPageViewModel : AOStandardPageViewModel
 	{
 		/// <summary>
 		/// Returns a PageViewModel of type <typeparam name="T"/>.
@@ -25,7 +25,7 @@ namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 	/// <summary>
 	/// Defines a Page View Model for a <see cref="StandardPage"/>.
 	/// </summary>
-	public class StandardPageViewModel<T> : AOBasePageViewModel<T> where T : StandardPage
+	public class StandardPageViewModel<T> : AOStandardPageViewModel<T> where T : StandardPage
 	{
 		public StandardPageViewModel(T currentPage) : base(currentPage)
 		{
@@ -33,6 +33,6 @@ namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 		}
 
 		new public T CurrentPage { get; private set; }
-		public string TestPropertyTwo { get; set; }
+		public string ViewModelProperty { get; set; }
 	}
 }

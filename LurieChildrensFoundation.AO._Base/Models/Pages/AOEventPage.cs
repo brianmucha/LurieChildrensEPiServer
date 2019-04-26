@@ -1,14 +1,13 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
-
-using LurieChildrensFoundation.AO._Base.Models.Pages;
 
 namespace LurieChildrensFoundation.AO._Base.Models.Pages
 {
 	/// <summary>
-	/// This Page Type is used for basic pages consisting of manually created content such as text, images, and blocks.
+	/// This Page Type is used for event landing pages, and works with the Event List Block Type.
 	/// </summary>
 	public class AOEventPage : AOBasePage
 	{
@@ -29,7 +28,16 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 		[CultureSpecific]
 		[UIHint("TextArea")]
 		[Required]
-		public virtual string Summary { get; set; }
+		public virtual String Summary { get; set; }
 
+		[Display(
+			Name = "Main Body",
+			Description = "",
+			GroupName = SystemTabNames.Content,
+			Order = 10)]
+		[CultureSpecific]
+		[UIHint("TextArea")]
+		[Required]
+		public virtual XhtmlString MainBody { get; set; }
 	}
 }

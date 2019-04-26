@@ -5,11 +5,10 @@ using LurieChildrensFoundation.AO._Base.Models.ViewModels;
 
 namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 {
-
 	/// <summary>
 	/// Returns a Page View Model for a <see cref="LandingPage"/>.
 	/// </summary>
-	public class LandingPageViewModel : AOBasePageViewModel
+	public class LandingPageViewModel : AOLandingPageViewModel
 	{
 		/// <summary>
 		/// Returns a PageViewModel of type <typeparam name="T"/>.
@@ -26,7 +25,7 @@ namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 	/// <summary>
 	/// Defines a Page View Model for a <see cref="LandingPage"/>.
 	/// </summary>
-	public class LandingPageViewModel<T> : AOBasePageViewModel<T> where T : LandingPage
+	public class LandingPageViewModel<T> : AOLandingPageViewModel<T> where T : LandingPage
 	{
 		public LandingPageViewModel(T currentPage) : base(currentPage)
 		{
@@ -34,5 +33,6 @@ namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 		}
 
 		new public T CurrentPage { get; private set; }
+		public string ViewModelProperty { get; set; }
 	}
 }

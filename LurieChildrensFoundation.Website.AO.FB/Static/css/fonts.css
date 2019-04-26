@@ -1,0 +1,65 @@
+﻿/* @license
+ * MyFonts Webfont Build ID 2179094, 2012-03-27T12:40:18-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2179094
+ * 
+ * ? 2012 Bitstream Inc
+*/
+
+@font-face {
+	font-family: 'Gesta-Regular';
+	src: url('../fonts/Gesta-Regular.eot');
+	src: url('../fonts/Gesta-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/Gesta-Regular.woff') format('woff'),url('../fonts/Gesta-Regular.ttf') format('truetype'),url('../fonts/Gesta-Regular.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'Gesta-Italic';
+	src: url('../fonts/Gesta-Italic.eot');
+	src: url('../fonts/Gesta-Italic.eot?#iefix') format('embedded-opentype'),url('../fonts/Gesta-Italic.woff') format('woff'),url('../fonts/Gesta-Italic.ttf') format('truetype'),url('../fonts/Gesta-Italic.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'Gesta-Medium';
+	src: url('../fonts/Gesta-Medium.eot');
+	src: url('../fonts/Gesta-Medium.eot?#iefix') format('embedded-opentype'),url('../fonts/Gesta-Medium.woff') format('woff'),url('../fonts/Gesta-Medium.ttf') format('truetype'),url('../fonts/Gesta-Medium.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'Gesta-Bold';
+	src: url('../fonts/Gesta-Bold.eot');
+	src: url('../fonts/Gesta-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/Gesta-Bold.woff') format('woff'),url('../fonts/Gesta-Bold.ttf') format('truetype'),url('../fonts/Gesta-Bold.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'Gesta-BoldItalic';
+	src: url('../fonts/Gesta-BoldItalic.eot');
+	src: url('../fonts/Gesta-BoldItalic.eot?#iefix') format('embedded-opentype'),url('../fonts/Gesta-BoldItalic.woff') format('woff'),url('../fonts/Gesta-BoldItalic.ttf') format('truetype'),url('../fonts/Gesta-BoldItalic.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'Volkswagen-Regular';
+	src: url('../fonts/VolkswagenSerial.eot');
+	src: url('../fonts/VolkswagenSerial.eot?#iefix') format('embedded-opentype'),url('../fonts/VolkswagenSerial.woff') format('woff'),url('../fonts/VolkswagenSerial.ttf') format('truetype'),url('../fonts/VolkswagenSerial.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'Volkswagen-Medium';
+	src: url('../fonts/VolkswagenSerial-Medium.eot');
+	src: url('../fonts/VolkswagenSerial-Medium.eot?#iefix') format('embedded-opentype'),url('../fonts/VolkswagenSerial-Medium.woff') format('woff'),url('../fonts/VolkswagenSerial-Medium.ttf') format('truetype'),url('../fonts/VolkswagenSerial-Medium.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'Volkswagen-Bold';
+	src: url('../fonts/VolkswagenSerial-Bold.eot');
+	src: url('../fonts/VolkswagenSerial-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/VolkswagenSerial-Bold.woff') format('woff'),url('../fonts/VolkswagenSerial-Bold.ttf') format('truetype'),url('../fonts/VolkswagenSerial-Bold.svg#wf') format('svg');
+}
+
+@font-face {
+	font-family: 'Volkswagen-Heavy';
+	src: url('../fonts/VolkswagenSerial-Heavy.eot');
+	src: url('../fonts/VolkswagenSerial-Heavy.eot?#iefix') format('embedded-opentype'),url('../fonts/VolkswagenSerial-Heavy.woff') format('woff'),url('../fonts/VolkswagenSerial-Heavy.ttf') format('truetype'),url('../fonts/VolkswagenSerial-Heavy.svg#wf') format('svg');
+}

@@ -187,6 +187,7 @@
   <ItemGroup>
     <Compile Include="Business\ContentExtension.cs" />
     <Compile Include="Business\ContentLocator.cs" />
+    <Compile Include="Models\FndGroupDefinitions.cs" />
     <Compile Include="Business\EpiserverViewEngine.cs" />
     <Compile Include="Business\Initializations\DependencyResolverInitialization.cs" />
     <Compile Include="Business\Initializations\EpiserverViewEngineInitializationModule.cs" />
@@ -196,6 +197,9 @@
     <Compile Include="Helpers\HtmlHelpers.cs" />
     <Compile Include="Models\Blocks\FndBaseBlock.cs" />
     <Compile Include="Models\Blocks\IFndBaseBlock.cs" />
+    <Compile Include="Models\Media\FndVideoFile.cs" />
+    <Compile Include="Models\Media\FndImageFile.cs" />
+    <Compile Include="Models\Media\FndGenericMedia.cs" />
     <Compile Include="Models\Pages\IFndBasePage.cs" />
     <Compile Include="Models\Pages\FndBasePage.cs" />
     <Compile Include="Models\ViewModels\FndBaseBlockViewModel.cs" />

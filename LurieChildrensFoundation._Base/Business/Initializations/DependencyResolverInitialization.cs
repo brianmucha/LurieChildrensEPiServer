@@ -8,9 +8,9 @@ using EPiServer.Framework.Initialization;
 using EPiServer.ServiceLocation;
 using EPiServer.Web.Mvc;
 
-using LurieChildrensFoundation._Base.Business.Rendering;
+using LurieChildrensFoundation._Base.Models.Rendering;
 
-namespace LurieChildrensFoundation._Base.Business.Initialization
+namespace LurieChildrensFoundation._Base.Models.Initialization
 {
 	[InitializableModule]
 	public class DependencyResolverInitialization : IConfigurableModule
