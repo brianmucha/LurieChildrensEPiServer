@@ -1,8 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
-using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
+
+using LurieChildrensFoundation._Base;
 
 namespace LurieChildrensFoundation.AO._Base.Models.Pages
 {
@@ -11,6 +12,9 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 	/// </summary>
 	public class AOLandingPage : AOBasePage
 	{
+
+		/* ********** Masthead Tab ********** */
+
 		[Display(
 			Name = "Main Headline",
 			Description = "The main headline for the Landing Page.",
@@ -44,5 +48,6 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 			Order = 13)]
 		[UIHint("Image")]
 		public virtual ContentReference MainImage { get; set; }
+
 	}
 }

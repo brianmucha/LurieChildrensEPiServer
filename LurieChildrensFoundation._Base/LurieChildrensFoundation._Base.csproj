@@ -188,6 +188,7 @@
     <Compile Include="Business\ContentExtension.cs" />
     <Compile Include="Business\ContentLocator.cs" />
     <Compile Include="Business\Initializations\FilterConfig.cs" />
+    <Compile Include="Business\Initializations\TinyMceInitialization.cs" />
     <Compile Include="Business\PageContextActionFilter.cs" />
     <Compile Include="Models\FndGroupDefinitions.cs" />
     <Compile Include="Business\EpiserverViewEngine.cs" />

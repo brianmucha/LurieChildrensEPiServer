@@ -51,21 +51,21 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 		[UIHint("Image")]
 		public virtual ContentReference MainImage { get; set; }
 
-		/* ********** Site Settings Tab ********** */
-
-		[Display(
-			Name = "Top Links",
-			Description = "The URL Links for the top of the masthead.",
-			GroupName = AOCustomTabNames.SiteSettings,
-			Order = 30)]
-		public virtual LinkItemCollection TopLinks { get; set; }
+		/* ********** Site-Wide Settings Tab ********** */
 
 		[Display(
 			Name = "Donate Link",
 			Description = "The URL Link to the donation form.",
 			GroupName = AOCustomTabNames.SiteSettings,
-			Order = 35)]
+			Order = 30)]
 		public virtual AOLinkItemType DonateLink { get; set; }
+
+		[Display(
+			Name = "Other Top Links",
+			Description = "The URL Links for the top of the masthead.",
+			GroupName = AOCustomTabNames.SiteSettings,
+			Order = 35)]
+		public virtual LinkItemCollection TopLinks { get; set; }
 
 		[Display(
 			Name = "Site Logo",

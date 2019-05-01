@@ -63,7 +63,12 @@ div.image-responsive {
 		opacity: .8;
 	}
 
-div.layout .col {
+div.layout > .row > .col {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+div.content {
 	padding-right: 0;
 	padding-left: 0;
 }
@@ -127,7 +132,7 @@ header {
 
 			header div.tools a.donate {
 				margin-right: 0;
-				padding: .8rem 2rem;
+				padding: .8rem 2rem 1.2rem 2rem;
 				background: #007DC3;
 				font-weight: bold;
 				color: #FFFFFF;
@@ -426,7 +431,7 @@ section {
 	}
 
 	section.hero:first-of-type {
-		margin-top: 6.5rem;
+		margin-top: 8rem;
 	}
 
 	section.hero div.content {
@@ -459,7 +464,7 @@ section {
 	}
 
 	section.hero:first-of-type {
-		margin-top: 7.5rem;
+		margin-top: 9.5rem;
 	}
 
 	section.hero div.content {

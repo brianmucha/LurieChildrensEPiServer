@@ -200,6 +200,7 @@
     <Compile Include="Models\Pages\AOBasePage.cs" />
     <Compile Include="Models\Pages\AOEventPage.cs" />
     <Compile Include="Models\AOGroupDefinitions.cs" />
+    <Compile Include="Models\Pages\AOStandardSidebarPage.cs" />
     <Compile Include="Models\Pages\AOStartPage.cs" />
     <Compile Include="Models\Pages\IAOBasePage.cs" />
     <Compile Include="Models\Pages\AOLandingPage.cs" />

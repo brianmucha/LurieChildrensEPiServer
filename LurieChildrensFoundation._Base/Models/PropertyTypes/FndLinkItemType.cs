@@ -1,10 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using EPiServer;
-using EPiServer.Core;
 using EPiServer.DataAnnotations;
 using EPiServer.Shell.ObjectEditing;
-using EPiServer.Web;
 
 using LurieChildrensFoundation._Base.Models.Blocks;
 
@@ -30,6 +29,7 @@ namespace LurieChildrensFoundation._Base.Models.PropertyTypes
 		[Display(
 			Name = "Open in",
 			Description = "")]
+		[SelectOne(SelectionFactoryType = typeof(TargetSelectionFactory))]
 		[CultureSpecific]
 		public virtual String Target { get; set; }
 
@@ -38,4 +38,16 @@ namespace LurieChildrensFoundation._Base.Models.PropertyTypes
 			Description = "")]
 		public virtual Url Src { get; set; }
 	}
+
+	public class TargetSelectionFactory : ISelectionFactory
+	{
+		IEnumerable<ISelectItem> ISelectionFactory.GetSelections(ExtendedMetadata metadata)
+		{
+			return new ISelectItem[] {
+				new SelectItem() { Text="Open the link in a new window", Value="_blank" },
+				new SelectItem() { Text="Open the link in the whole window", Value="_self" }
+			};
+		}
+	}
+
 }

@@ -232,6 +232,7 @@
     <Content Include="ClientResources\Images\EventListBlock.png" />
     <Content Include="ClientResources\Images\EventPage.png" />
     <Content Include="ClientResources\Images\LandingPage.png" />
+    <Content Include="ClientResources\Images\StandardSidebarPage.png" />
     <Content Include="ClientResources\Images\StandardPage.png" />
     <Content Include="ClientResources\Images\ScriptBlock.png" />
     <Content Include="ClientResources\Images\RichTextBlock.png" />
@@ -357,6 +358,8 @@
     <Content Include="Static\js\bootstrap-4.3.1\bootstrap.js.map" />
     <Content Include="Static\js\bootstrap-4.3.1\bootstrap.min.js.map" />
     <Content Include="Static\js\jquery-3.4.0\jquery-3.4.0.min.map" />
+    <Content Include="Views\Shared\DisplayTemplates\LinkItem.cshtml" />
+    <Content Include="Views\Pages\StandardSidebarPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

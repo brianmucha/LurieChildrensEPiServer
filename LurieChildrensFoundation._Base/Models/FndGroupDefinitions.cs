@@ -7,6 +7,6 @@ namespace LurieChildrensFoundation._Base.Models.Pages
 	public class FndCustomTabNames
 	{
 		[Display(Order = 110)]
-		public const string SiteSettings = "Site Settings";
+		public const string SiteSettings = "Site-Wide Settings";
 	}
 }

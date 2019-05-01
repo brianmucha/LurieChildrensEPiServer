@@ -5,7 +5,7 @@
 @using LurieChildrensFoundation.AO.FB.Models.ViewModels;
 
 @model StandardPageViewModel<StandardPage>
-@{ Layout = "~/Views/Shared/Layouts/SidebarNavigation.cshtml"; }
+@{ Layout = "~/Views/Shared/Layouts/FullWidth.cshtml"; }
 
 <section>
 	<div class="layout container">
@@ -18,7 +18,7 @@
 				<p>@Html.PropertyFor(model => model.SiteLogo.Alt)</p>
 				<p>@Url.ContentUrl(Model.SiteLogo.Src)</p>
 
-				<p>@Url.ContentUrl(Model.DonateLink)</p>
+				<p>@Url.ContentUrl(Model.DonateLink.Src)</p>
 			</div>
 		</div>
 	</div>

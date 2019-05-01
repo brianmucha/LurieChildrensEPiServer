@@ -21,14 +21,7 @@
 	<div class="layout container">
 		<div class="row">
 			<div class="col-12">
-				<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
-				<p>@Html.PropertyFor(model => model.ViewModelProperty)</p>
-				<p>@Html.PropertyFor(model => model.ViewModelPropertyBase)</p>
-
-				<p>@Html.PropertyFor(model => model.SiteLogo.Alt)</p>
-				<p>@Url.ContentUrl(Model.SiteLogo.Src)</p>
-
-				<p>@Url.ContentUrl(Model.DonateLink)</p>
+				@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
 			</div>
 		</div>
 	</div>
@@ -38,7 +31,14 @@
 	<div class="layout container">
 		<div class="row">
 			<div class="col-12">
-				@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+				<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+				<p>@Html.PropertyFor(model => model.ViewModelProperty)</p>
+				<p>@Html.PropertyFor(model => model.ViewModelPropertyBase)</p>
+
+				<p>@Html.PropertyFor(model => model.SiteLogo.Alt)</p>
+				<p>@Url.ContentUrl(Model.SiteLogo.Src)</p>
+
+				<p>@Url.ContentUrl(Model.DonateLink.Src)</p>
 			</div>
 		</div>
 	</div>
