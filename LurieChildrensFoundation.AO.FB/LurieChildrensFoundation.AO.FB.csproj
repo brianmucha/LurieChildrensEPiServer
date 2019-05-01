@@ -205,6 +205,8 @@
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\Pages\LandingPage.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
+    <Compile Include="Models\PropertyTypes\LinkItemType.cs" />
+    <Compile Include="Models\PropertyTypes\SiteLogoType.cs" />
     <Compile Include="Models\ViewModels\EventPageViewModel.cs" />
     <Compile Include="Models\ViewModels\EventListBlockModel.cs" />
     <Compile Include="Models\ViewModels\StartPageViewModel.cs" />

@@ -42,19 +42,26 @@
 	</head>
 
 	<body>
-
 		<header>
 			<div class="layout container">
 				<div class="row">
 					<div class="tools col-12">
-						<a href="">Members</a>
-						<a href="">Contact Us</a>
-						<a class="donate" href="">Donate</a>
+						<ul>
+							@foreach (var link in Model.TopLinks)
+							{
+							<li>
+								<a target="@link.Target" href="@Url.PageUrl(link.Href)">@link.Text</a>
+							</li>
+							}
+							<li>
+								<a class="donate" href="@Url.ContentUrl(Model.DonateLink)">Donate</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<div class="row">
 					<div class="logo col-10 col-sm-4 col-lg-3">
-						<a href="index.htm"><img class="logo-main" src="./Static/images/logo-foundersboard.png" /></a>
+						<a href="@EPiServer.Core.ContentReference.StartPage"><img class="logo-main" alt="@Html.PropertyFor(model => model.SiteLogo.Alt)" src="@Url.ContentUrl(Model.SiteLogo.Src)" /></a>
 						</a>
 					</div>
 					<div class="navigation col-2 col-sm-8 col-lg-9">

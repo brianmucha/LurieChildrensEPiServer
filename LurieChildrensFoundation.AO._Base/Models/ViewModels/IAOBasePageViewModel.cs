@@ -1,6 +1,8 @@
-﻿using EPiServer.Core;
+﻿using EPiServer;
+using EPiServer.SpecializedProperties;
 
 using LurieChildrensFoundation.AO._Base.Models.Pages;
+using LurieChildrensFoundation.AO._Base.Models.PropertyTypes;
 
 namespace LurieChildrensFoundation.AO._Base.Models.ViewModels
 {
@@ -15,6 +17,12 @@ namespace LurieChildrensFoundation.AO._Base.Models.ViewModels
 	{
 		T CurrentPage { get; }
 //		LayoutModel Layout { get; set; }
-		IContent Section { get; set; }
+//		IContent Section { get; set; }
+
+		LinkItemCollection TopLinks { get; set; }
+		AOLinkItemType DonateLink { get; set; }
+		AOSiteLogoType SiteLogo { get; set; }
+
+		string ViewModelPropertyBase { get; set; }
 	}
 }

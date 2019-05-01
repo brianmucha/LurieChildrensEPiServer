@@ -97,6 +97,23 @@ header {
 		line-height: 1.5;
 	}
 
+		header div.tools ul {
+			display: inline-block;
+			list-style-type: none;
+			margin: .5rem 0 0 0;
+			padding: 0;
+		}
+
+			header div.tools ul li {
+				display: inline-block;
+				position: relative;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				vertical-align: top;
+				white-space: nowrap;
+			}
+
 		header div.tools a {
 			margin: 1.2rem 1rem;
 			color: #333333;

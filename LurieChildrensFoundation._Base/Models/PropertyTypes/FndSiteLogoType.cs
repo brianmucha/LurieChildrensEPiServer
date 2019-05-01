@@ -13,13 +13,19 @@ namespace LurieChildrensFoundation._Base.Models.PropertyTypes
 	/// <summary>
 	/// This Property Type is used on the Start Page to define the site logo.
 	/// </summary>
-	public class LogoType : FndBaseBlock
+	public class FndSiteLogoType : FndBaseBlock
 	{
+		[Display(
+			Name = "Alt Attribute",
+			Description = "Specifies an alternate text for an image, if the image cannot be displayed.")]
 		[CultureSpecific]
-		public virtual String Title { get; set; }
+		public virtual String Alt { get; set; }
 
+		[Display(
+			Name = "Src Attribute",
+			Description = "Specifies the URL of an image.")]
 		[DefaultDragAndDropTarget]
 		[UIHint(UIHint.Image)]
-		public virtual Url Url { get; set; }
+		public virtual Url Src { get; set; }
 	}
 }

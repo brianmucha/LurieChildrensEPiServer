@@ -8,6 +8,7 @@
 @{ Layout = "~/Views/Shared/Layouts/MainNavigation.cshtml"; }
 
 <h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+<p>@Html.PropertyFor(model => model.ViewModelPropertyBase)</p>
 <div>
 	@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
 </div>

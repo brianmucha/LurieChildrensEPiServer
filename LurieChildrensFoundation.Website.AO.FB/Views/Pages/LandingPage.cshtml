@@ -24,6 +24,11 @@
 				<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
 				<p>@Html.PropertyFor(model => model.ViewModelProperty)</p>
 				<p>@Html.PropertyFor(model => model.ViewModelPropertyBase)</p>
+
+				<p>@Html.PropertyFor(model => model.SiteLogo.Alt)</p>
+				<p>@Url.ContentUrl(Model.SiteLogo.Src)</p>
+
+				<p>@Url.ContentUrl(Model.DonateLink)</p>
 			</div>
 		</div>
 	</div>

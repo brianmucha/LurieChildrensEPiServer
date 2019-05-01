@@ -14,7 +14,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 		[Display(
 			Name = "Main Headline",
 			Description = "The main headline for the Landing Page.",
-			GroupName = CustomTabNames.Masthead,
+			GroupName = AOCustomTabNames.Masthead,
 			Order = 10)]
 		[CultureSpecific]
 		public virtual String MainHeadline { get; set; }
@@ -22,7 +22,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 		[Display(
 			Name = "Sub Headline",
 			Description = "The sub headline for the Landing Page.",
-			GroupName = CustomTabNames.Masthead,
+			GroupName = AOCustomTabNames.Masthead,
 			Order = 11)]
 		[CultureSpecific]
 		public virtual String SubHeadline { get; set; }
@@ -30,7 +30,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 		[Display(
 				Name = "Short Text Block",
 				Description = "A short paragraph.",
-				GroupName = CustomTabNames.Masthead,
+				GroupName = AOCustomTabNames.Masthead,
 				Order = 12)]
 		[CultureSpecific]
 		[UIHint("TextArea")]
@@ -40,7 +40,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 		[Display(
 			Name = "Main Image",
 			Description = "A full page width main image.",
-			GroupName = CustomTabNames.Masthead,
+			GroupName = AOCustomTabNames.Masthead,
 			Order = 13)]
 		[UIHint("Image")]
 		public virtual ContentReference MainImage { get; set; }

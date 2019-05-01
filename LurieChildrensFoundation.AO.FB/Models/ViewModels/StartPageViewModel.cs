@@ -1,7 +1,8 @@
-﻿using EPiServer.Core;
+﻿using EPiServer;
 
-using LurieChildrensFoundation.AO.FB.Models.Pages;
+using LurieChildrensFoundation.AO._Base.Models.PropertyTypes;
 using LurieChildrensFoundation.AO._Base.Models.ViewModels;
+using LurieChildrensFoundation.AO.FB.Models.Pages;
 
 namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 {
@@ -33,6 +34,5 @@ namespace LurieChildrensFoundation.AO.FB.Models.ViewModels
 		}
 
 		new public T CurrentPage { get; private set; }
-		public string ViewModelProperty { get; set; }
 	}
 }

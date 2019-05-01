@@ -1,4 +1,8 @@
-﻿using EPiServer.Core;
+﻿using System;
+using EPiServer;
+using EPiServer.SpecializedProperties;
+
+using LurieChildrensFoundation.AO._Base.Models.PropertyTypes;
 
 using LurieChildrensFoundation.AO._Base.Models.Pages;
 
@@ -31,11 +35,13 @@ namespace LurieChildrensFoundation.AO._Base.Models.ViewModels
 			CurrentPage = currentPage;
 		}
 
-		public T CurrentPage { get; set; }
-//		public LayoutModel Layout { get; set; }
-		public IContent Section { get; set; }
+		public T CurrentPage { get; private set; }
+		public String ViewModelProperty { get; set; }
+		public String ViewModelPropertyBase { get; set; }
 
-		public string ViewModelPropertyBase { get; set; }
+		public LinkItemCollection TopLinks { get; set; }
+		public AOLinkItemType DonateLink { get; set; }
+		public AOSiteLogoType SiteLogo { get; set; }
 	}
 }
  

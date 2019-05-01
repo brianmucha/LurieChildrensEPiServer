@@ -27,5 +27,7 @@ namespace LurieChildrensFoundation._Base.Models.ViewModels
 		public T CurrentPage { get; private set; }
 //		public LayoutModel Layout { get; set; }
 		public IContent Section { get; set; }
+
+		public string ViewModelPropertyBase { get; set; }
 	}
 }

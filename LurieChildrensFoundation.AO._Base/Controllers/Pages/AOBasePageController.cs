@@ -7,7 +7,6 @@ using LurieChildrensFoundation.AO._Base.Models.ViewModels;
 
 namespace LurieChildrensFoundation.AO._Base.Controllers
 {
-
 	/// <summary>
 	/// This Page Controller provides the common implementation for all Page Types in this solution.
 	/// </summary>
