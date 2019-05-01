@@ -1,34 +1,35 @@
-﻿using EPiServer.Core;
-
+﻿using LurieChildrensFoundation.AO._Base.Models.ViewModels;
 using LurieChildrensFoundation.AO.CRFJB.Models.Pages;
-using LurieChildrensFoundation.AO._Base.Models.ViewModels;
 
 namespace LurieChildrensFoundation.AO.CRFJB.Models.ViewModels
 {
-
 	/// <summary>
 	/// Returns a Page View Model for a <see cref="StandardPage"/>.
 	/// </summary>
-	public class StandardPageViewModel
+	public class StandardPageViewModel : AOStandardPageViewModel
 	{
-		public static StandardPageViewModel<T> Create<T>(T page) where T : StandardPage
+		/// <summary>
+		/// Returns a PageViewModel of type <typeparam name="T"/>.
+		/// </summary>
+		/// <remarks>
+		/// Convenient method for creating PageViewModels without having to specify the type as methods can use type inference while constructors cannot.
+		/// </remarks>
+		new public static StandardPageViewModel<T> Create<T>(T page) where T : StandardPage
 		{
 			return new StandardPageViewModel<T>(page);
 		}
 	}
-	
+
 	/// <summary>
 	/// Defines a Page View Model for a <see cref="StandardPage"/>.
 	/// </summary>
-	public class StandardPageViewModel<T> : IAOBasePageViewModel<T> where T : StandardPage
+	public class StandardPageViewModel<T> : AOStandardPageViewModel<T> where T : StandardPage
 	{
-		public StandardPageViewModel(T currentPage)
+		public StandardPageViewModel(T currentPage) : base(currentPage)
 		{
 			CurrentPage = currentPage;
 		}
 
-		public T CurrentPage { get; private set; }
-		// public LayoutModel Layout { get; set; }
-		public IContent Section { get; set; }
+		new public T CurrentPage { get; private set; }
 	}
 }

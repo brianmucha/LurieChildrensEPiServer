@@ -1,34 +1,35 @@
-﻿using EPiServer.Core;
-
+﻿using LurieChildrensFoundation.AO._Base.Models.ViewModels;
 using LurieChildrensFoundation.AO.CRF.Models.Pages;
-using LurieChildrensFoundation._Base.Models.ViewModels;
 
 namespace LurieChildrensFoundation.AO.CRF.Models.ViewModels
 {
-
 	/// <summary>
 	/// Returns a Page View Model for a <see cref="EventPage"/>.
 	/// </summary>
-	public class EventPageViewModel
+	public class EventPageViewModel : AOEventPageViewModel
 	{
-		public static EventPageViewModel<T> Create<T>(T page) where T : EventPage
+		/// <summary>
+		/// Returns a PageViewModel of type <typeparam name="T"/>.
+		/// </summary>
+		/// <remarks>
+		/// Convenient method for creating PageViewModels without having to specify the type as methods can use type inference while constructors cannot.
+		/// </remarks>
+		new public static EventPageViewModel<T> Create<T>(T page) where T : EventPage
 		{
 			return new EventPageViewModel<T>(page);
 		}
 	}
-	
+
 	/// <summary>
 	/// Defines a Page View Model for a <see cref="EventPage"/>.
 	/// </summary>
-	public class EventPageViewModel<T> : IFndBasePageViewModel<T> where T : EventPage
+	public class EventPageViewModel<T> : AOEventPageViewModel<T> where T : EventPage
 	{
-		public EventPageViewModel(T currentPage)
+		public EventPageViewModel(T currentPage) : base(currentPage)
 		{
 			CurrentPage = currentPage;
 		}
 
-		public T CurrentPage { get; private set; }
-		// public LayoutModel Layout { get; set; }
-		public IContent Section { get; set; }
+		new public T CurrentPage { get; private set; }
 	}
 }

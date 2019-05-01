@@ -1,7 +1,4 @@
-﻿using EPiServer;
-
-using LurieChildrensFoundation.AO._Base.Models.PropertyTypes;
-using LurieChildrensFoundation.AO._Base.Models.ViewModels;
+﻿using LurieChildrensFoundation.AO._Base.Models.ViewModels;
 using LurieChildrensFoundation.AO.FB.Models.Pages;
 
 namespace LurieChildrensFoundation.AO.FB.Models.ViewModels

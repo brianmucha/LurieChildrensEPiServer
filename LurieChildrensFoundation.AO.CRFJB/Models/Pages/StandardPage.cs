@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using EPiServer.Core;
-using EPiServer.DataAbstraction;
+﻿using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
 using LurieChildrensFoundation.AO._Base.Models.Pages;
@@ -14,12 +12,7 @@ namespace LurieChildrensFoundation.AO.CRFJB.Models.Pages
 		DisplayName = "Standard Page", 
 		Description = "This Page Type is used for basic pages consisting of manually created content such as text, images, and blocks.", 
 		GUID = "0C180AA1-5565-46D2-9B23-6E6FEB68AA4D")]
-	public class StandardPage : AOBasePage
+	public class StandardPage : AOStandardPage
 	{
-		[Display(
-			GroupName = SystemTabNames.Content,
-			Order = 310)]
-		[CultureSpecific]
-		public virtual ContentArea MainContentArea { get; set; }
 	}
 }

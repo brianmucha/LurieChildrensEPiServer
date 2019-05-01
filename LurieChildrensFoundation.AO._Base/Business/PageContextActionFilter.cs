@@ -29,28 +29,6 @@ namespace LurieChildrensFoundation.AO._Base.Business
 				model.SiteLogo = startPage.SiteLogo;
 			}
 
-
-
-			/*
-
-				var currentContentLink = filterContext.RequestContext.GetContentLink();
-
-				var layoutModel = model.Layout ?? _contextFactory.CreateLayoutModel(currentContentLink, filterContext.RequestContext);
-
-				var layoutController = filterContext.Controller as IModifyLayout;
-				if (layoutController != null)
-				{
-					layoutController.ModifyLayout(layoutModel);
-				}
-
-				model.Layout = layoutModel;
-
-				if (model.Section == null)
-				{
-					model.Section = _contextFactory.GetSection(currentContentLink);
-				}
-			}
-			*/
 		}
 
 		public void OnResultExecuted(ResultExecutedContext filterContext)
