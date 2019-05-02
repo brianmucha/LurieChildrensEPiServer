@@ -188,6 +188,7 @@
     <Compile Include="Business\Initializations\FilterConfig.cs" />
     <Compile Include="Business\PageContextActionFilter.cs" />
     <Compile Include="Controllers\Pages\AOBasePageController.cs" />
+    <Compile Include="Controllers\Pages\AOSidebarPageController.cs" />
     <Compile Include="Controllers\Pages\AOStartPageController.cs" />
     <Compile Include="Controllers\Pages\AOLandingPageController.cs" />
     <Compile Include="Controllers\Pages\AOEventPageController.cs" />
@@ -200,7 +201,7 @@
     <Compile Include="Models\Pages\AOBasePage.cs" />
     <Compile Include="Models\Pages\AOEventPage.cs" />
     <Compile Include="Models\AOGroupDefinitions.cs" />
-    <Compile Include="Models\Pages\AOStandardSidebarPage.cs" />
+    <Compile Include="Models\Pages\AOSidebarPage.cs" />
     <Compile Include="Models\Pages\AOStartPage.cs" />
     <Compile Include="Models\Pages\IAOBasePage.cs" />
     <Compile Include="Models\Pages\AOLandingPage.cs" />
@@ -210,6 +211,7 @@
     <Compile Include="Models\ViewModels\AOBaseBlockViewModel.cs" />
     <Compile Include="Models\ViewModels\AOBasePageViewModel.cs" />
     <Compile Include="Models\ViewModels\AOEventPageViewModel.cs" />
+    <Compile Include="Models\ViewModels\AOSidebarPageViewModel.cs" />
     <Compile Include="Models\ViewModels\AOStartPageViewModel.cs" />
     <Compile Include="Models\ViewModels\IAOBaseBlockViewModel.cs" />
     <Compile Include="Models\ViewModels\IAOBasePageViewModel.cs" />

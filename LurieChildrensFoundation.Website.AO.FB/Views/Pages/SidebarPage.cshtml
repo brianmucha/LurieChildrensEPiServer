@@ -1,19 +1,18 @@
-﻿@using EPiServer.Cms;
-@using EPiServer.Web.Mvc.Html;
+﻿@using EPiServer.Web.Mvc.Html;
 
 @using LurieChildrensFoundation.AO.FB.Models.Pages;
 @using LurieChildrensFoundation.AO.FB.Models.ViewModels;
 
-@model StandardSidebarPageViewModel<StandardSidebarPage>
+@model SidebarPageViewModel<SidebarPage>
 @{ Layout = "~/Views/Shared/Layouts/FullWidth.cshtml"; }
 
 <section>
 	<div class="layout container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-3">
 				@Html.PropertyFor(model => model.CurrentPage.SidebarContentArea)
 			</div>
-			<div class="col-12">
+			<div class="col-9">
 				@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
 			</div>
 		</div>

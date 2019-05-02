@@ -3,10 +3,10 @@
 
 @if (Model != null)
 {
-	<div class="LinkList">
+	<ul class="LinkList">
 	@foreach (LinkItem item in Model)
 	{
-		<a class="LinkItem" href="@item.Href" title="@item.Title">@item.Text</a>
+		<li><a class="LinkItem" href="@Url.PageUrl(item.Href)" title="@item.Title">@item.Text</a></li>
 	}
-	</div>
+	</ul>
 }

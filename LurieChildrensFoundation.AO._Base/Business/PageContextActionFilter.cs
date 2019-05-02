@@ -9,13 +9,20 @@ using LurieChildrensFoundation.AO._Base.Models.ViewModels;
 
 namespace LurieChildrensFoundation.AO._Base.Business
 {
+	/// <summary>
+	/// Intercepts actions with view models of type IAOBasePageViewModel and populates the Site-Wide Settings properties.
+	/// </summary>
+	/// <remarks>
+	/// This filter frees controllers for pages from having to care about common properties and other framework components 
+	/// allowing the controllers to focus on the specifics for the page types and actions that they handle.
+	/// </remarks>
 	class PageContextActionFilter : IResultFilter
 	{
 		public void OnResultExecuting(ResultExecutingContext filterContext)
 		{
 			var viewModel = filterContext.Controller.ViewData.Model;
 
-			var model = viewModel as IAOBasePageViewModel<AOBasePage>;
+			IAOBasePageViewModel<AOBasePage> model = viewModel as IAOBasePageViewModel<AOBasePage>;
 			if (model != null)
 			{
 				model.ViewModelPropertyBase = "This value is set in the PageContextActionFilter.";

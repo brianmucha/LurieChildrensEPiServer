@@ -9,11 +9,11 @@ namespace LurieChildrensFoundation.AO.FB.Models.Pages
 	/// This Page Type is used for basic pages consisting of manually created content such as text, images, and blocks.
 	/// </summary>
 	[ContentType(
-		DisplayName = "Standard Sidebar Page", 
+		DisplayName = "Sidebar Page", 
 		Description = "Used for basic pages consisting of manually created content such as text, images, and blocks.", 
 		GUID = "62B46A19-9872-4BFA-BA53-57E4C1EF2D7B")]
-	[ImageUrl("~/ClientResources/Images/StandardSidebarPage.png")]
-	public class StandardSidebarPage : AOStandardSidebarPage
+	[ImageUrl("~/ClientResources/Images/SidebarPage.png")]
+	public class SidebarPage : AOSidebarPage
 	{
 	}
 }

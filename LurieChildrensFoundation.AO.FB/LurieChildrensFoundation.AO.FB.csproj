@@ -188,6 +188,7 @@
     <Compile Include="Controllers\Blocks\EventListBlockController.cs" />
     <Compile Include="Controllers\Blocks\SidebarBlockController.cs" />
     <Compile Include="Controllers\Pages\EventPageController.cs" />
+    <Compile Include="Controllers\Pages\SidebarPageController.cs" />
     <Compile Include="Controllers\Pages\StartPageController.cs" />
     <Compile Include="Controllers\Pages\LandingPageController.cs" />
     <Compile Include="Controllers\Pages\StandardPageController.cs" />
@@ -202,13 +203,13 @@
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\VideoFile.cs" />
     <Compile Include="Models\Pages\EventPage.cs" />
-    <Compile Include="Models\Pages\StandardSidebarPage.cs" />
+    <Compile Include="Models\Pages\SidebarPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\Pages\LandingPage.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\ViewModels\EventPageViewModel.cs" />
     <Compile Include="Models\ViewModels\EventListBlockModel.cs" />
-    <Compile Include="Models\ViewModels\StandardSidebarPageViewModel.cs" />
+    <Compile Include="Models\ViewModels\SidebarPageViewModel.cs" />
     <Compile Include="Models\ViewModels\StartPageViewModel.cs" />
     <Compile Include="Models\ViewModels\SidebarBlockViewModel.cs" />
     <Compile Include="Models\ViewModels\LandingPageViewModel.cs" />

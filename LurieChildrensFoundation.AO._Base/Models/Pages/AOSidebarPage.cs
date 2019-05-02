@@ -9,7 +9,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 	/// <summary>
 	/// This Page Type is used for basic pages consisting of manually created content such as text, images, and blocks.
 	/// </summary>
-	public class AOStandardSidebarPage : AOStandardPage
+	public class AOSidebarPage : AOBasePage
 	{
 
 		/* ********** Content Tab ********** */

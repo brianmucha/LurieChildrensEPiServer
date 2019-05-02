@@ -4,16 +4,30 @@
 @using LurieChildrensFoundation.AO.FB.Models.ViewModels;
 
 @model LandingPageViewModel<LandingPage>
-@{Layout = "~/Views/Shared/Layouts/FullWidth.cshtml";}
+@{ Layout = "~/Views/Shared/Layouts/FullWidth.cshtml"; }
 
-<section class="hero">
-	<div class="image-responsive">
-		<div class="content">
-			<h1>@Html.PropertyFor(model => model.CurrentPage.MainHeadline)</h1>
-			<h3>@Html.PropertyFor(model => model.CurrentPage.SubHeadline)</h3>
-			<p>@Html.PropertyFor(model => model.CurrentPage.ShortText)</p>
+<section>
+	<div class="layout container">
+		<div class="row">
+			<div class="col-12">
+				<div class="image-responsive">
+					<div class="content">
+						<h1>@Html.PropertyFor(model => model.CurrentPage.MainHeadline)</h1>
+					</div>
+					@Html.PropertyFor(model => model.CurrentPage.MainImage)
+				</div>
+			</div>
 		</div>
-		@Html.PropertyFor(model => model.CurrentPage.MainImage)
+	</div>
+</section>
+
+<section>
+	<div class="layout container">
+		<div class="row">
+			<div class="col-12">
+				@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -29,16 +43,6 @@
 				<p>@Url.ContentUrl(Model.SiteLogo.Src)</p>
 
 				<p>@Url.ContentUrl(Model.DonateLink.Src)</p>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="layout container">
-		<div class="row">
-			<div class="col-12">
-				@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
 			</div>
 		</div>
 	</div>
