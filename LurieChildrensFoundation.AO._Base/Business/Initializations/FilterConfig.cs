@@ -5,6 +5,9 @@ using EPiServer.ServiceLocation;
 
 namespace LurieChildrensFoundation.AO._Base.Business.Initializations
 {
+	/// <summary>
+	/// Adds items to the EPiServer initialization chain.
+	/// </summary>
 	[ModuleDependency(typeof(EPiServer.Web.InitializationModule))]
 	public class FilterConfig : IInitializableModule
 	{

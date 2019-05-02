@@ -7,6 +7,5 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 	/// </summary>
 	public class AOBaseBlock : BlockData, IAOBaseBlock
 	{
-
 	}
 }

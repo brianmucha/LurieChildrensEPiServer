@@ -16,7 +16,6 @@ namespace LurieChildrensFoundation.AO.FB.Controllers
 			var viewModel = EventPageViewModel.Create(currentPage);
 
 			// Populate any additional properties in the ViewModel that are not part of the Model.
-			viewModel.ViewModelPropertyBase = "This is a ViewModel property populated by the controller.";
 			viewModel.ViewModelProperty = "This is a ViewModel property populated by the controller.";
 
 			return View(viewModel);

@@ -10,11 +10,11 @@ using LurieChildrensFoundation.AO._Base.Models.ViewModels;
 namespace LurieChildrensFoundation.AO._Base.Business
 {
 	/// <summary>
-	/// Intercepts actions with view models of type IAOBasePageViewModel and populates the Site-Wide Settings properties.
+	/// Intercepts actions with view models of type <c>IAOBasePageViewModel</c> and populates the Site-Wide Settings properties.
 	/// </summary>
 	/// <remarks>
-	/// This filter frees controllers for pages from having to care about common properties and other framework components 
-	/// allowing the controllers to focus on the specifics for the page types and actions that they handle.
+	/// This filter frees page controllers from having to care about common properties and other framework components.
+	/// This allows the controllers to focus on the specifics for the page types and actions that they handle.
 	/// </remarks>
 	class PageContextActionFilter : IResultFilter
 	{

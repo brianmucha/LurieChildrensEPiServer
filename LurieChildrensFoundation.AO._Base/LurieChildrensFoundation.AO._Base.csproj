@@ -194,7 +194,15 @@
     <Compile Include="Controllers\Pages\AOEventPageController.cs" />
     <Compile Include="Controllers\Pages\AOStandardPageController.cs" />
     <Compile Include="Models\Blocks\AOBaseBlock.cs" />
+    <Compile Include="Models\Blocks\AOEventListBlock.cs" />
+    <Compile Include="Models\Blocks\AOHeroBlock.cs" />
     <Compile Include="Models\Blocks\IAOBaseBlock.cs" />
+    <Compile Include="Models\Blocks\AOImageBlock.cs" />
+    <Compile Include="Models\Blocks\AOLightboxBlock.cs" />
+    <Compile Include="Models\Blocks\AOLinkListBlock.cs" />
+    <Compile Include="Models\Blocks\AORichTextBlock.cs" />
+    <Compile Include="Models\Blocks\AOScriptBlock.cs" />
+    <Compile Include="Models\Blocks\AOSidebarBlock.cs" />
     <Compile Include="Models\Media\AOGenericMedia.cs" />
     <Compile Include="Models\Media\AOImageFile.cs" />
     <Compile Include="Models\Media\AOVideoFile.cs" />

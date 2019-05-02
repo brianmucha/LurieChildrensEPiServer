@@ -192,6 +192,7 @@
     <Compile Include="Controllers\Pages\StartPageController.cs" />
     <Compile Include="Controllers\Pages\LandingPageController.cs" />
     <Compile Include="Controllers\Pages\StandardPageController.cs" />
+    <Compile Include="Models\Blocks\ImageBlock.cs" />
     <Compile Include="Models\Blocks\HeroBlock.cs" />
     <Compile Include="Models\Blocks\LinkListBlock.cs" />
     <Compile Include="Models\Blocks\ScriptBlock.cs" />

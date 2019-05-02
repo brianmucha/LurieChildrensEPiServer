@@ -1,8 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-using EPiServer.Core;
-using EPiServer.DataAbstraction;
+﻿using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
-using EPiServer.Web;
+
+using LurieChildrensFoundation.AO._Base.Models.Blocks;
 
 namespace LurieChildrensFoundation.AO.FB.Models.Blocks
 {
@@ -11,14 +10,7 @@ namespace LurieChildrensFoundation.AO.FB.Models.Blocks
 		Description = "A structured main image block. ",
 		GUID = "8F0C943E-58CA-4752-A9C8-961007244455")]
 	[ImageUrl("~/ClientResources/Images/HeroBlock.png")]
-	public class HeroBlock : BlockData
+	public class HeroBlock : AOHeroBlock
 	{
-		[CultureSpecific]
-		[Display(
-			Name = "Content",
-			Description = "The HTML content for the Hero Block",
-			GroupName = SystemTabNames.Content,
-			Order = 1)]
-		public virtual XhtmlString Content { get; set; }
 	}
 }

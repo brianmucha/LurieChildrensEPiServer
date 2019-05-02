@@ -34,9 +34,9 @@ namespace LurieChildrensFoundation._Base.Models.PropertyTypes
 		public virtual String Target { get; set; }
 
 		[Display(
-			Name = "Src Attribute",
+			Name = "Link Href",
 			Description = "")]
-		public virtual Url Src { get; set; }
+		public virtual Url Href { get; set; }
 	}
 
 	public class TargetSelectionFactory : ISelectionFactory

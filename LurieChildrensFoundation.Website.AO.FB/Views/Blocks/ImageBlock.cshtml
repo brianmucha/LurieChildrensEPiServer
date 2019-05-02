@@ -1,0 +1,11 @@
+﻿@using LurieChildrensFoundation.AO.FB.Models.Blocks;
+
+@model ImageBlock
+
+<div class="image-responsive">
+	<img alt="@Model.Alt" src="@Url.ContentUrl(Model.Image)" />
+	@if (Model.Caption != null)
+	{
+		<div class="caption">@Model.Caption</div>
+	}
+</div>

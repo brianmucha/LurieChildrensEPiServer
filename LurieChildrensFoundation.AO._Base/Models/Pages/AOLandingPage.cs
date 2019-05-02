@@ -32,10 +32,10 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 		public virtual String SubHeadline { get; set; }
 
 		[Display(
-				Name = "Short Text Block",
-				Description = "A short paragraph.",
-				GroupName = AOCustomTabNames.Masthead,
-				Order = 12)]
+			Name = "Short Text Block",
+			Description = "A short paragraph.",
+			GroupName = AOCustomTabNames.Masthead,
+			Order = 12)]
 		[CultureSpecific]
 		[UIHint("TextArea")]
 		[StringLength(200)]
@@ -43,7 +43,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 
 		[Display(
 			Name = "Main Image",
-			Description = "A full page width main image.",
+			Description = "A full page-width main image.",
 			GroupName = AOCustomTabNames.Masthead,
 			Order = 13)]
 		[UIHint("Image")]
