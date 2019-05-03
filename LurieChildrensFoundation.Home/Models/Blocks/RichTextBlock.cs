@@ -3,6 +3,8 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
+using LurieChildrensFoundation._Base.Models;
+
 namespace LurieChildrensFoundation.Home.Models.Blocks
 {
 	[ContentType(
@@ -15,7 +17,7 @@ namespace LurieChildrensFoundation.Home.Models.Blocks
 		[Display(
 			Name = "Content",
 			Description = "The rich text or HTML content.",
-			GroupName = SystemTabNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 1)]
 		public virtual XhtmlString Content { get; set; }
 	}

@@ -15,7 +15,7 @@ namespace LurieChildrensFoundation._Base.Models.Media
 		[Display(
 			Name = "Description",
 			Description = "A description of the content.",
-			GroupName = SystemTabNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 1)]
 		[CultureSpecific]
 		[Editable(true)]
@@ -24,7 +24,7 @@ namespace LurieChildrensFoundation._Base.Models.Media
 		[Display(
 			Name = "Preview Image",
 			Description = "A still image preview of the content.",
-			GroupName = SystemTabNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 2)]
 		[UIHint("Image")]
 		public virtual ContentReference PreviewImage { get; set; }

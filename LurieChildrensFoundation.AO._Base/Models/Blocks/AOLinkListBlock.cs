@@ -14,7 +14,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Content",
 			Description = "The link collection for the Link List Block",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 10)]
 		[CultureSpecific]
 		[UIHint("LinkItemCollection")]

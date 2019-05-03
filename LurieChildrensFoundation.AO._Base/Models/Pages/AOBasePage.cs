@@ -11,6 +11,5 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 {
 	public class AOBasePage : FndBasePage, IAOBasePage
 	{
-
 	}
 }

@@ -16,14 +16,14 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Heading",
 			Description = "The heading for the EventList",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 10)]
 		public virtual String Heading { get; set; }
 
 		[Display(
 			Name = "Root Page",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 20)]
 		[Required]
 		public virtual PageReference Root { get; set; }
@@ -31,7 +31,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Sort Order",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 30)]
 		[BackingType(typeof(PropertyNumber))]
 		[UIHint("SortOrder")]
@@ -40,21 +40,21 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Page Type Filter",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 40)]
 		public virtual PageType PageTypeFilter { get; set; }
 
 		[Display(
 			Name = "Category Filter",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 50)]
 		public virtual CategoryList CategoryFilter { get; set; }
 
 		[Display(
 			Name = "Recursive",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 60)]
 		public virtual bool Recursive { get; set; }
 

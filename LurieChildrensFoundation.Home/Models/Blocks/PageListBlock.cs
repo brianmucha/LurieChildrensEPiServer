@@ -4,6 +4,7 @@ using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.Filters;
 
+using LurieChildrensFoundation._Base.Models;
 using LurieChildrensFoundation._Base.Models.Blocks;
 
 namespace LurieChildrensFoundation.Home.Models.Blocks
@@ -17,7 +18,7 @@ namespace LurieChildrensFoundation.Home.Models.Blocks
 		[Display(
 			Name = "Heading",
 			Description = "The heading for the PageList",
-			GroupName = SystemTabNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 1)]
 		public virtual string Heading { get; set; }
 
@@ -25,7 +26,7 @@ namespace LurieChildrensFoundation.Home.Models.Blocks
 		[Display(
 			Name = "Root Page",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 2)]
 		public virtual PageReference Root { get; set; }
 
@@ -34,28 +35,28 @@ namespace LurieChildrensFoundation.Home.Models.Blocks
 		[Display(
 			Name = "Sort Order",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 4)]
 		public virtual FilterSortOrder SortOrder { get; set; }
 
 		[Display(
 			Name = "Page Type Filter",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 5)]
 		public virtual PageType PageTypeFilter { get; set; }
 
 		[Display(
 			Name = "Category Filter",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 6)]
 		public virtual CategoryList CategoryFilter { get; set; }
 
 		[Display(
 			Name = "Recursive",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 7)]
 		public virtual bool Recursive { get; set; }
 

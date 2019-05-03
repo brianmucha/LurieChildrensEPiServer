@@ -13,7 +13,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Content",
 			Description = "The HTML content for the Hero Block",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 10)]
 		[CultureSpecific]
 		public virtual XhtmlString Content { get; set; }

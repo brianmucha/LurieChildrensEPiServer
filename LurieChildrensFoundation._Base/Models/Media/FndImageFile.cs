@@ -15,7 +15,7 @@ namespace LurieChildrensFoundation._Base.Models.Media
 		[Display(
 			Name = "Description",
 			Description = "Add a description of the content.",
-			GroupName = SystemTabNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 1)]
 		[CultureSpecific]
 		[Editable(true)]

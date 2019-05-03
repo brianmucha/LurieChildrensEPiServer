@@ -16,7 +16,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Image",
 			Description = "The gif, jpg or png image.",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 10)]
 		[DefaultDragAndDropTarget]
 		[UIHint(UIHint.Image)]
@@ -25,7 +25,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Alt Attribute",
 			Description = "Specifies an alternate text for an image, if the image cannot be displayed.",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 20)]
 		[CultureSpecific]
 		public virtual String Alt { get; set; }
@@ -33,7 +33,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Caption",
 			Description = "The optional caption for the image.",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 30)]
 		[CultureSpecific]
 		[UIHint(UIHint.Textarea)]

@@ -14,7 +14,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Code",
 			Description = "The code for the Script Block",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 10)]
 		[CultureSpecific]
 		[UIHint(UIHint.Textarea)]

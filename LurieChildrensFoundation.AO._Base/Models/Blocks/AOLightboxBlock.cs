@@ -15,7 +15,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Content",
 			Description = "The HTML content for the Lightbox",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 10)]
 		[CultureSpecific]
 		[UIHint(UIHint.Textarea)]
@@ -24,7 +24,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Code",
 			Description = "The script content for the Lightbox",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 20)]
 		[UIHint(UIHint.Textarea)]
 		public virtual String Code { get; set; }
@@ -32,7 +32,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 		[Display(
 			Name = "Styles",
 			Description = "The style content for the Lightbox",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 30)]
 		[UIHint(UIHint.Textarea)]
 		public virtual String Styles { get; set; }

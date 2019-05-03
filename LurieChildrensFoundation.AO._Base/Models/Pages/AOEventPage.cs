@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
+using EPiServer.Web;
 
 namespace LurieChildrensFoundation.AO._Base.Models.Pages
 {
@@ -14,7 +15,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 		[Display(
 			Name = "Event Date",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 5)]
 		[UIHint("DateOnly")]
 		[Required]
@@ -23,20 +24,20 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 		[Display(
 			Name = "Short Summary",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 10)]
 		[CultureSpecific]
-		[UIHint("TextArea")]
+		[UIHint(UIHint.Textarea)]
 		[Required]
 		public virtual String Summary { get; set; }
 
 		[Display(
 			Name = "Main Body",
 			Description = "",
-			GroupName = SystemTabNames.Content,
+			GroupName = AOCustomTabNames.Content,
 			Order = 10)]
 		[CultureSpecific]
-		[UIHint("TextArea")]
+		[UIHint(UIHint.Textarea)]
 		[Required]
 		public virtual XhtmlString MainBody { get; set; }
 	}

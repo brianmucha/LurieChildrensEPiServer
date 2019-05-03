@@ -193,11 +193,9 @@
     <Compile Include="Models\Blocks\SidebarBlock.cs" />
     <Compile Include="Models\Blocks\LightboxBlock.cs" />
     <Compile Include="Models\Blocks\PageListBlock.cs" />
-    <Compile Include="Models\Pages\EventPage.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\ViewModels\SidebarBlockViewModel.cs" />
     <Compile Include="Models\ViewModels\PageListBlockModel.cs" />
-    <Compile Include="Models\ViewModels\EventPageViewModel.cs" />
     <Compile Include="Models\ViewModels\StandardPageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

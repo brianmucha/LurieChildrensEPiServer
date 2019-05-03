@@ -19,7 +19,7 @@ namespace LurieChildrensFoundation._Base.Models.Pages
 		[Display(
 			Name = "Main Content",
 			Description = "The main content will be shown in the main content area of the page, using the XHTML-editor you can insert for example text, images and tables.",
-			GroupName = Global.GroupNames.Content,
+			GroupName = FndCustomTabNames.Content,
 			Order = 30)]
 		public virtual ContentArea MainContentArea { get; set; }
 
@@ -28,7 +28,7 @@ namespace LurieChildrensFoundation._Base.Models.Pages
 		[Display(
 			Name = "Meta Title",
 			Description = "The title of the page. Titles are displayed on browser tabs, bookmarks and history, and also in search engine results pages as the clickable headline for a given result, and are important for usability, SEO, and social sharing.",
-			GroupName = Global.GroupNames.MetaData,
+			GroupName = FndCustomTabNames.MetaData,
 			Order = 100)]
 		[CultureSpecific]
 		public virtual string MetaTitle
@@ -47,7 +47,7 @@ namespace LurieChildrensFoundation._Base.Models.Pages
 		[Display(
 			Name = "Meta Description",
 			Description = "The summary of the page content. Search engines show the meta description in search results mostly when the searched-for phrase is within the description, so optimizing the meta description is crucial for SEO.",
-			GroupName = Global.GroupNames.MetaData,
+			GroupName = FndCustomTabNames.MetaData,
 			Order = 200)]
 		[CultureSpecific]
 		[UIHint("TextArea")]
@@ -56,7 +56,7 @@ namespace LurieChildrensFoundation._Base.Models.Pages
 		[Display(
 			Name = "Meta Robots",
 			Description = "Controls the page's availability for search engine crawling and indexing.",
-			GroupName = Global.GroupNames.MetaData,
+			GroupName = FndCustomTabNames.MetaData,
 			Order = 300)]
 		[SelectMany(SelectionFactoryType = typeof(MetaRobotsSelectionFactory))]
 		public virtual string MetaRobots { get; set; }

@@ -2,8 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAnnotations;
-
-using LurieChildrensFoundation._Base;
+using EPiServer.Web;
 
 namespace LurieChildrensFoundation.AO._Base.Models.Pages
 {
@@ -37,7 +36,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 			GroupName = AOCustomTabNames.Masthead,
 			Order = 12)]
 		[CultureSpecific]
-		[UIHint("TextArea")]
+		[UIHint(UIHint.Textarea)]
 		[StringLength(200)]
 		public virtual String ShortText { get; set; }
 
@@ -46,7 +45,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 			Description = "A full page-width main image.",
 			GroupName = AOCustomTabNames.Masthead,
 			Order = 13)]
-		[UIHint("Image")]
+		[UIHint(UIHint.Image)]
 		public virtual ContentReference MainImage { get; set; }
 
 	}
