@@ -6,28 +6,46 @@
 @model EventPageViewModel<EventPage>
 @{ Layout = "~/Views/Shared/Layouts/FullWidth.cshtml"; }
 
-<section>
-	<div class="layout container">
-		<div class="row">
-			<div class="col-12">
-				@Html.PropertyFor(model => model.CurrentPage.MainBody)
+@if (Model.CurrentPage.UseSidebar)
+{
+	<section>
+		<div class="layout container">
+			<div class="row">
+				<div class="col-3">
+					@Html.PropertyFor(model => model.CurrentPage.SidebarContentArea)
+				</div>
+				<div class="col-9">
+					@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+}
+else
+{
+	<section>
+		<div class="layout container">
+			<div class="row">
+				<div class="col-12">
+					@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+				</div>
+			</div>
+		</div>
+	</section>
+}
 
-<section>
-	<div class="layout container">
-		<div class="row">
-			<div class="col-6">
-				@Html.PropertyFor(model => model.CurrentPage.EventDate)
-			</div>
-			<div class="col-6">
-				@Html.PropertyFor(model => model.CurrentPage.Summary)
+	<section class="debug">
+		<div class="layout container">
+			<div class="row">
+				<div class="col-6">
+					@Html.PropertyFor(model => model.CurrentPage.EventDate)
+				</div>
+				<div class="col-6">
+					@Html.PropertyFor(model => model.CurrentPage.Summary)
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
 <section>
 	<div class="layout container">

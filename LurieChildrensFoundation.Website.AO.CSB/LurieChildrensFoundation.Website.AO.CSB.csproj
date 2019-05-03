@@ -246,7 +246,7 @@
     <Content Include="Views\Pages\StandardPage.cshtml" />
     <Content Include="Views\Blocks\LightboxBlock.cshtml" />
     <Content Include="Views\Blocks\EventListBlock.cshtml" />
-    <Content Include="Views\Blocks\SidebarBlock.cshtml" />
+    <Content Include="Views\Blocks\SidebarNavBlock.cshtml" />
     <Content Include="Views\Shared\Layouts\_Root.cshtml" />
     <Content Include="Views\Shared\Layouts\MainNavigation.cshtml" />
     <Content Include="Views\Shared\Navigation.cshtml" />

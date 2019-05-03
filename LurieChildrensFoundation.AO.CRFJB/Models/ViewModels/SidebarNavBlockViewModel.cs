@@ -3,18 +3,18 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.Filters;
 
-using LurieChildrensFoundation.AO.CSB.Models.Blocks;
-using LurieChildrensFoundation.AO.CSB.Models.ViewModels;
+using LurieChildrensFoundation.AO.CRFJB.Models.Blocks;
+using LurieChildrensFoundation.AO.CRFJB.Models.ViewModels;
 using LurieChildrensFoundation.AO._Base.Models.ViewModels;
 
-namespace LurieChildrensFoundation.AO.CSB.Models.ViewModels
+namespace LurieChildrensFoundation.AO.CRFJB.Models.ViewModels
 {
 	/// <summary>
-	/// Returns a Block View Model for a <see cref="SidebarBlock"/>.
+	/// Returns a Block View Model for a <see cref="SidebarNavBlock"/>.
 	/// </summary>
-	public class SidebarBlockViewModel
+	public class SidebarNavBlockViewModel
 	{
-		public SidebarBlockViewModel(SidebarBlock currentBlock)
+		public SidebarNavBlockViewModel(SidebarNavBlock currentBlock)
 		{
 			this.Heading = currentBlock.Heading;
 			this.Root = currentBlock.Root;

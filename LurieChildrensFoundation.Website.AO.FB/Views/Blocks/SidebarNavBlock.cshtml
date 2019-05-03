@@ -1,0 +1,14 @@
+﻿@using LurieChildrensFoundation.AO.FB.Models.ViewModels;
+
+@model SidebarNavBlockViewModel
+
+<nav class="sidenav">
+	<ul>
+		@foreach (var page in Model.Pages)
+		{
+			<li>
+				@Html.PageLink(page)
+			</li>
+		}
+	</ul>
+</nav>

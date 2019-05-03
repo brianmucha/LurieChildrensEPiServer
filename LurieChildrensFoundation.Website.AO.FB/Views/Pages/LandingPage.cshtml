@@ -21,29 +21,47 @@
 	</div>
 </section>
 
-<section>
-	<div class="layout container">
-		<div class="row">
-			<div class="col-12">
-				@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+@if (Model.CurrentPage.UseSidebar)
+{
+	<section>
+		<div class="layout container">
+			<div class="row">
+				<div class="col-3">
+					@Html.PropertyFor(model => model.CurrentPage.SidebarContentArea)
+				</div>
+				<div class="col-9">
+					@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-
-<section>
-	<div class="layout container">
-		<div class="row">
-			<div class="col-12">
-				<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
-				<p>@Html.PropertyFor(model => model.ViewModelProperty)</p>
-				<p>@Html.PropertyFor(model => model.ViewModelPropertyBase)</p>
-
-				<p>@Html.PropertyFor(model => model.SiteLogo.Alt)</p>
-				<p>@Url.ContentUrl(Model.SiteLogo.Src)</p>
-
-				<p>@Url.ContentUrl(Model.DonateLink.Href)</p>
+	</section>
+}
+else
+{
+	<section>
+		<div class="layout container">
+			<div class="row">
+				<div class="col-12">
+					@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+}
+
+	<section class="debug">
+		<div class="layout container">
+			<div class="row">
+				<div class="col-12">
+					<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+					<p>@Html.PropertyFor(model => model.ViewModelProperty)</p>
+					<p>@Html.PropertyFor(model => model.ViewModelPropertyBase)</p>
+
+					<p>@Html.PropertyFor(model => model.SiteLogo.Alt)</p>
+					<p>@Url.ContentUrl(Model.SiteLogo.Src)</p>
+
+					<p>@Url.ContentUrl(Model.DonateLink.Href)</p>
+				</div>
+			</div>
+		</div>
+	</section>

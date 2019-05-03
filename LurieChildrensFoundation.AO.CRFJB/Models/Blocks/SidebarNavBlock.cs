@@ -13,7 +13,7 @@ namespace LurieChildrensFoundation.AO.CRFJB.Models.Blocks
 		DisplayName = "Sidebar Navigation Block",
 		Description = "",
 		GUID = "680BEC65-6D1D-4052-AA70-7205B6CEDD96")]
-	public class SidebarBlock : AOSidebarBlock
+	public class SidebarNavBlock : AOSidebarNavBlock
 	{
 	}
 }

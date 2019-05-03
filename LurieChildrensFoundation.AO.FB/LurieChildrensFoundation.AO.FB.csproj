@@ -186,33 +186,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Blocks\EventListBlockController.cs" />
-    <Compile Include="Controllers\Blocks\SidebarBlockController.cs" />
+    <Compile Include="Controllers\Blocks\SidebarNavBlockController.cs" />
     <Compile Include="Controllers\Pages\EventPageController.cs" />
-    <Compile Include="Controllers\Pages\SidebarPageController.cs" />
     <Compile Include="Controllers\Pages\StartPageController.cs" />
     <Compile Include="Controllers\Pages\LandingPageController.cs" />
     <Compile Include="Controllers\Pages\StandardPageController.cs" />
     <Compile Include="Models\Blocks\ImageBlock.cs" />
     <Compile Include="Models\Blocks\HeroBlock.cs" />
+    <Compile Include="Models\Blocks\SidebarLinkListBlock.cs" />
     <Compile Include="Models\Blocks\LinkListBlock.cs" />
     <Compile Include="Models\Blocks\ScriptBlock.cs" />
     <Compile Include="Models\Blocks\RichTextBlock.cs" />
     <Compile Include="Models\Blocks\LightboxBlock.cs" />
     <Compile Include="Models\Blocks\EventListBlock.cs" />
-    <Compile Include="Models\Blocks\SidebarBlock.cs" />
+    <Compile Include="Models\Blocks\SidebarNavBlock.cs" />
     <Compile Include="Models\Media\GenericMedia.cs" />
     <Compile Include="Models\Media\ImageFile.cs" />
     <Compile Include="Models\Media\VideoFile.cs" />
     <Compile Include="Models\Pages\EventPage.cs" />
-    <Compile Include="Models\Pages\SidebarPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\Pages\LandingPage.cs" />
     <Compile Include="Models\Pages\StandardPage.cs" />
     <Compile Include="Models\ViewModels\EventPageViewModel.cs" />
     <Compile Include="Models\ViewModels\EventListBlockModel.cs" />
-    <Compile Include="Models\ViewModels\SidebarPageViewModel.cs" />
     <Compile Include="Models\ViewModels\StartPageViewModel.cs" />
-    <Compile Include="Models\ViewModels\SidebarBlockViewModel.cs" />
+    <Compile Include="Models\ViewModels\SidebarNavBlockViewModel.cs" />
     <Compile Include="Models\ViewModels\LandingPageViewModel.cs" />
     <Compile Include="Models\ViewModels\StandardPageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

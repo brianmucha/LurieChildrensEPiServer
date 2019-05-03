@@ -7,13 +7,13 @@ using EPiServer.Filters;
 
 using LurieChildrensFoundation.AO._Base.Models.Blocks;
 
-namespace LurieChildrensFoundation.AO.CSB.Models.Blocks
+namespace LurieChildrensFoundation.AO.CRF.Models.Blocks
 {
 	[ContentType(
 		DisplayName = "Sidebar Navigation Block",
 		Description = "",
-		GUID = "12A17606-6D1A-4CA8-AB27-AAF81143CF5F")]
-	public class SidebarBlock : AOSidebarBlock
+		GUID = "F9B4D38E-67F6-4836-8134-0868B0E4AFE7")]
+	public class SidebarNavBlock : AOSidebarNavBlock
 	{
 	}
 }

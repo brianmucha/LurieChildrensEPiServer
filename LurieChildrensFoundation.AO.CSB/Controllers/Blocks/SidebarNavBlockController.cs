@@ -7,33 +7,33 @@ using EPiServer.Filters;
 using EPiServer.Web.Mvc;
 
 using LurieChildrensFoundation._Base.Models;
-using LurieChildrensFoundation.AO.CRF.Models.Blocks;
-using LurieChildrensFoundation.AO.CRF.Models.ViewModels;
+using LurieChildrensFoundation.AO.CSB.Models.Blocks;
+using LurieChildrensFoundation.AO.CSB.Models.ViewModels;
 
-namespace LurieChildrensFoundation.AO.CRF.Controllers.Blocks
+namespace LurieChildrensFoundation.AO.CSB.Controllers.Blocks
 {
 	/// <summary>
-	/// Returns a partial view using the <see cref="SidebarBlockViewModel"/>.
+	/// Returns a partial view using the <see cref="SidebarNavBlockViewModel"/>.
 	/// </summary>
-	public class SidebarBlockController : BlockController<SidebarBlock>
+	public class SidebarNavBlockController : BlockController<SidebarNavBlock>
 	{
 
 		private ContentLocator contentLocator;
 		private IContentLoader contentLoader;
 
-		public SidebarBlockController(ContentLocator contentLocator, IContentLoader contentLoader)
+		public SidebarNavBlockController(ContentLocator contentLocator, IContentLoader contentLoader)
 		{
 			this.contentLocator = contentLocator;
 			this.contentLoader = contentLoader;
 		}
 
-		public override ActionResult Index(SidebarBlock currentBlock)
+		public override ActionResult Index(SidebarNavBlock currentBlock)
 		{
 
-			var model = new SidebarBlockViewModel(currentBlock);
+			var model = new SidebarNavBlockViewModel(currentBlock);
 
 			// Get the edit hints collection.
-			var editingHints = ViewData.GetEditHints<SidebarBlockViewModel, SidebarBlock>();
+			var editingHints = ViewData.GetEditHints<SidebarNavBlockViewModel, SidebarNavBlock>();
 
 			// Add connections between view data properties and content data properties.
 			editingHints.AddConnection(viewData => viewData.Heading, contentData => contentData.Heading);
@@ -58,7 +58,7 @@ namespace LurieChildrensFoundation.AO.CRF.Controllers.Blocks
 			return PartialView(model);
 		}
 
-		private IEnumerable<PageData> FindPages(SidebarBlock currentBlock)
+		private IEnumerable<PageData> FindPages(SidebarNavBlock currentBlock)
 		{
 
 			IEnumerable<PageData> pages;

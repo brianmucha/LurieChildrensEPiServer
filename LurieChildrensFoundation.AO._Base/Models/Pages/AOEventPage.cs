@@ -12,11 +12,29 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 	/// </summary>
 	public class AOEventPage : AOBasePage
 	{
+
+		/* ********** Content Tab ********** */
+
+		[Display(
+			Name = "Use Sidebar",
+			Description = "Reveals the left sidebar.",
+			GroupName = AOCustomTabNames.Content,
+			Order = 40)]
+		public virtual Boolean UseSidebar { get; set; }
+
+		[Display(
+			Name = "Sidebar Content",
+			Description = "The sidebar content will be shown in the sidebar content area of the page, using the XHTML-editor you can insert for example text, images and tables.",
+			GroupName = AOCustomTabNames.Content,
+			Order = 45)]
+		[CultureSpecific]
+		public virtual ContentArea SidebarContentArea { get; set; }
+
 		[Display(
 			Name = "Event Date",
 			Description = "",
 			GroupName = AOCustomTabNames.Content,
-			Order = 5)]
+			Order = 50)]
 		[UIHint("DateOnly")]
 		[Required]
 		public virtual DateTime EventDate { get; set; }
@@ -25,7 +43,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 			Name = "Short Summary",
 			Description = "",
 			GroupName = AOCustomTabNames.Content,
-			Order = 10)]
+			Order = 60)]
 		[CultureSpecific]
 		[UIHint(UIHint.Textarea)]
 		[Required]
@@ -35,7 +53,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 			Name = "Main Body",
 			Description = "",
 			GroupName = AOCustomTabNames.Content,
-			Order = 10)]
+			Order = 70)]
 		[CultureSpecific]
 		[UIHint(UIHint.Textarea)]
 		[Required]

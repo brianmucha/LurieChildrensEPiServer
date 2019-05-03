@@ -228,8 +228,9 @@
     <Content Include="ClientResources\Images\HeroBlock.png" />
     <Content Include="ClientResources\Images\ImageBlock.png" />
     <Content Include="ClientResources\Images\LightboxBlock.png" />
+    <Content Include="ClientResources\Images\SidebarLinklistBlock.png" />
     <Content Include="ClientResources\Images\LinklistBlock.png" />
-    <Content Include="ClientResources\Images\SidebarBlock.png" />
+    <Content Include="ClientResources\Images\SidebarNavBlock.png" />
     <Content Include="ClientResources\Images\EventListBlock.png" />
     <Content Include="ClientResources\Images\EventPage.png" />
     <Content Include="ClientResources\Images\LandingPage.png" />
@@ -331,7 +332,7 @@
     <Content Include="Views\Pages\StandardPage.cshtml" />
     <Content Include="Views\Blocks\LightboxBlock.cshtml" />
     <Content Include="Views\Blocks\EventListBlock.cshtml" />
-    <Content Include="Views\Blocks\SidebarBlock.cshtml" />
+    <Content Include="Views\Blocks\SidebarNavBlock.cshtml" />
     <Content Include="Views\Shared\Layouts\_Root.cshtml" />
     <Content Include="Views\Shared\Layouts\SidebarNavigation.cshtml" />
     <Content Include="Views\Shared\_Navigation.cshtml" />
@@ -360,8 +361,8 @@
     <Content Include="Static\js\bootstrap-4.3.1\bootstrap.min.js.map" />
     <Content Include="Static\js\jquery-3.4.0\jquery-3.4.0.min.map" />
     <Content Include="Views\Shared\DisplayTemplates\LinkItem.cshtml" />
-    <Content Include="Views\Pages\SidebarPage.cshtml" />
     <Content Include="Views\Blocks\ImageBlock.cshtml" />
+    <Content Include="Views\Blocks\SidebarLinkListBlock.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

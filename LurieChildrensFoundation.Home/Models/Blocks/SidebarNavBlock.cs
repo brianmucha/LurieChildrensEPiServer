@@ -1,62 +1,63 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.Filters;
-using EPiServer.Web;
 
-namespace LurieChildrensFoundation.AO._Base.Models.Blocks
+using LurieChildrensFoundation._Base.Models;
+using LurieChildrensFoundation._Base.Models.Blocks;
+
+namespace LurieChildrensFoundation.Home.Models.Blocks
 {
-	/// <summary>
-	/// A collection of links for the Sidebar.
-	/// </summary>
-	public class AOSidebarBlock : AOBaseBlock
+	[ContentType(
+		DisplayName = "Sidebar Navigation Block",
+		Description = "",
+		GUID = "2AE75311-22AB-42C9-882C-A68793D8A014")]
+	public class SidebarNavBlock : FndBaseBlock
 	{
 		[Display(
 			Name = "Heading",
 			Description = "The heading for the Sidebar",
-			GroupName = AOCustomTabNames.Content,
-			Order = 10)]
-		[CultureSpecific]
-		public virtual String Heading { get; set; }
+			GroupName = FndCustomTabNames.Content,
+			Order = 1)]
+		public virtual string Heading { get; set; }
 
+		[Required]
 		[Display(
 			Name = "Root Page",
 			Description = "",
-			GroupName = AOCustomTabNames.Content,
-			Order = 20)]
-		[Required]
+			GroupName = FndCustomTabNames.Content,
+			Order = 2)]
 		public virtual PageReference Root { get; set; }
 
+		[UIHint("SortOrder")]
+		[BackingType(typeof(PropertyNumber))]
 		[Display(
 			Name = "Sort Order",
 			Description = "",
-			GroupName = AOCustomTabNames.Content,
-			Order = 30)]
-		[BackingType(typeof(PropertyNumber))]
-		[UIHint("SortOrder")]
+			GroupName = FndCustomTabNames.Content,
+			Order = 4)]
 		public virtual FilterSortOrder SortOrder { get; set; }
 
 		[Display(
 			Name = "Page Type Filter",
 			Description = "",
-			GroupName = AOCustomTabNames.Content,
-			Order = 40)]
+			GroupName = FndCustomTabNames.Content,
+			Order = 5)]
 		public virtual PageType PageTypeFilter { get; set; }
 
 		[Display(
 			Name = "Category Filter",
 			Description = "",
-			GroupName = AOCustomTabNames.Content,
-			Order = 50)]
+			GroupName = FndCustomTabNames.Content,
+			Order = 6)]
 		public virtual CategoryList CategoryFilter { get; set; }
 
 		[Display(
 			Name = "Recursive",
 			Description = "",
-			GroupName = AOCustomTabNames.Content,
-			Order = 60)]
+			GroupName = FndCustomTabNames.Content,
+			Order = 7)]
 		public virtual bool Recursive { get; set; }
 
 		#region IInitializableContent
