@@ -14,5 +14,8 @@ namespace LurieChildrensFoundation.AO._Base.Models
 
 		[Display(Order = 110)]
 		public const string SiteSettings = "Site-Wide Settings";
+
+		[Display(Order = 5)]
+		public const string EventInfo = "Event Info";
 	}
 }

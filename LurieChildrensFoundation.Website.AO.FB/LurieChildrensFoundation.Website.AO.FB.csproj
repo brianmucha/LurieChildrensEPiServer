@@ -269,6 +269,7 @@
     <Content Include="Static\images\favicon\favicon-96.png" />
     <Content Include="Static\images\favicon\favicon.ico" />
     <Content Include="Static\images\logo-foundersboard.png" />
+    <Content Include="Static\images\quote.png" />
     <Content Include="Static\images\social-facebook.png" />
     <Content Include="Static\images\social-instagram.png" />
     <Content Include="Static\images\social-linkedin.png" />
@@ -339,7 +340,6 @@
     <Content Include="Views\Pages\EventPage.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\DateTime.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\DateOnly.cshtml" />
     <Content Include="Views\Pages\LandingPage.cshtml" />
     <Content Include="Views\Blocks\HeroBlock.cshtml" />
@@ -363,6 +363,7 @@
     <Content Include="Views\Shared\DisplayTemplates\LinkItem.cshtml" />
     <Content Include="Views\Blocks\ImageBlock.cshtml" />
     <Content Include="Views\Blocks\SidebarLinkListBlock.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\AddressType.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -2,3 +2,12 @@
 .Sleek .dijitTextBox, .Sleek .dijitExpandingTextArea {
 	resize: vertical;
 }
+
+blockquote {
+	position: relative;
+	border: 1px solid #b8d9f9;
+	background: #edf6ff;
+	line-height: 1.1;
+	padding: .6rem 2rem;
+	font-family: 'Gesta-Medium', Arial, Helvetica, sans-serif;
+}

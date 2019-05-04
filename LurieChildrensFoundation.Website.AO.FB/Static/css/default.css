@@ -206,6 +206,7 @@ header {
 			}
 
 			header div.navigation ul.nav li.active a {
+				color: #007DC3;
 				text-decoration: underline;
 				text-decoration-color: #007DC3;
 			}
@@ -388,6 +389,43 @@ section {
 			max-width: 26rem;
 		}
 
+	section blockquote {
+		position: relative;
+		border: 1px solid #b8d9f9;
+		background: #edf6ff;
+		line-height: 1.1;
+		padding: .6rem 2rem 0 5rem;
+		font-family: 'Gesta-Medium', Arial, Helvetica, sans-serif;
+	}
+
+		section blockquote:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -1rem;
+			left: .5rem;
+			width: 4rem;
+			height: 3.2rem;
+			background-image: url("../images/quote-open.png");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		section blockquote:after {
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: -1rem;
+			right: .5rem;
+			width: 4rem;
+			height: 3.2rem;
+			background-image: url("../images/quote-close.png");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
 	section a {
 		color: #007DC3;
 		font-family: 'Gesta-Medium', Arial, Helvetica, sans-serif;
@@ -531,6 +569,13 @@ section {
 			line-height: 1.3;
 			max-width: 40rem;
 		}
+}
+
+section .summary {
+	border: 1px solid #b8d9f9;
+	background: #edf6ff;
+	padding-top: 1rem;
+	line-height: 1.2;
 }
 
 /* ***** Footer ***** */

@@ -1,0 +1,12 @@
+﻿@using LurieChildrensFoundation._Base.Models.PropertyTypes;
+@model FndAddressType
+
+@if (Model != null)
+{
+	if (!String.IsNullOrWhiteSpace(Model.RecipientLine))
+	{
+		@Model.RecipientLine<br />
+	}
+	@Model.DeliveryLine<br />
+	@Model.LastLine
+}

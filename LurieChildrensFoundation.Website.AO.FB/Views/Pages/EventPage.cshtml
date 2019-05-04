@@ -1,4 +1,5 @@
-﻿@using EPiServer.Web.Mvc.Html;
+﻿@using EPiServer.Editor;
+@using EPiServer.Web.Mvc.Html;
 
 @using LurieChildrensFoundation.AO.FB.Models.Pages;
 @using LurieChildrensFoundation.AO.FB.Models.ViewModels;
@@ -15,7 +16,57 @@
 					@Html.PropertyFor(model => model.CurrentPage.SidebarContentArea)
 				</div>
 				<div class="col-9">
-					@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+					<div class="row">
+						<div class="col-12">
+							@Html.PropertyFor(model => model.CurrentPage.MastheadArea)
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+						</div>
+					</div>
+					<div class=" row">
+						<div class="col-12">
+							<div class="summary container">
+								<div class=" row">
+									<div class="col-4">
+										@if (PageEditing.PageIsInEditMode)
+										{
+											@Html.PropertyFor(model => model.CurrentPage.EventDate)
+											@Html.PropertyFor(model => model.CurrentPage.EventTime)
+										<br />
+											@Html.PropertyFor(model => model.CurrentPage.EventLocation)
+										<br />
+											@Html.PropertyFor(model => model.CurrentPage.EventSite)
+										}
+										else
+										{
+											<p>
+												@Html.PropertyFor(model => model.CurrentPage.EventDate)<br />
+												@Html.PropertyFor(model => model.CurrentPage.EventTime)
+											</p>
+											<p>
+												@Html.PropertyFor(model => model.CurrentPage.EventLocation)
+												(<a target="_blank" href="https://www.google.com/maps/place/@Model.CurrentPage.EventLocation.ToEncodedString()">Map</a>)
+											</p>
+											<p>
+												@Html.PropertyFor(model => model.CurrentPage.EventSite)
+											</p>
+										}
+									</div>
+									<div class="col-8">
+										<p>@Html.PropertyFor(model => model.CurrentPage.Summary)</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -27,6 +78,22 @@ else
 		<div class="layout container">
 			<div class="row">
 				<div class="col-12">
+					@Html.PropertyFor(model => model.CurrentPage.MastheadArea)
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					@Html.PropertyFor(model => model.CurrentPage.EventDate)<br />
+					@Html.PropertyFor(model => model.CurrentPage.EventTime)<br />
+					@Html.PropertyFor(model => model.CurrentPage.EventLocation)<br />
+					@Html.PropertyFor(model => model.CurrentPage.EventSite)
+				</div>
+				<div class="col-6">
+					@Html.PropertyFor(model => model.CurrentPage.Summary)
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
 					@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
 				</div>
 			</div>
@@ -34,20 +101,7 @@ else
 	</section>
 }
 
-	<section class="debug">
-		<div class="layout container">
-			<div class="row">
-				<div class="col-6">
-					@Html.PropertyFor(model => model.CurrentPage.EventDate)
-				</div>
-				<div class="col-6">
-					@Html.PropertyFor(model => model.CurrentPage.Summary)
-				</div>
-			</div>
-		</div>
-	</section>
-
-<section>
+<section class="debug">
 	<div class="layout container">
 		<div class="row">
 			<div class="col-12">
