@@ -2,4 +2,44 @@
 
 @model HeroBlock
 
-@Html.PropertyFor(model => model.Content)
+<section class="hero">
+	<div class="image-responsive">
+		<div class="content">
+			@if (Model.MainHeadline != null)
+			{
+				<h1>@Html.PropertyFor(model => model.MainHeadline)</h1>
+			}
+			@if (Model.SubHeadline != null)
+			{
+				<h3>@Html.PropertyFor(model => model.SubHeadline)</h3>
+			}
+			@if (Model.ShortText != null)
+			{
+				<p>@Html.PropertyFor(model => model.ShortText)</p>
+			}
+		</div>
+		<picture>
+			@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.CurrentPage.Image992)))
+			{
+				<source srcset="@Url.ContentUrl(Model.CurrentPage.Image992)" media="(min-width: 992px)">
+			}
+			@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.CurrentPage.Image768)))
+			{
+				<source srcset="@Url.ContentUrl(Model.CurrentPage.Image768)" media="(min-width: 768px)">
+			}
+			@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.CurrentPage.Image576)))
+			{
+				<source srcset="@Url.ContentUrl(Model.CurrentPage.Image576)" media="(min-width: 576px)">
+			}
+			@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.CurrentPage.Image320)))
+			{
+				<source srcset="@Url.ContentUrl(Model.CurrentPage.Image320)" media="(min-width: 320px)">
+			}
+			@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.CurrentPage.Image72)))
+			{
+				<source srcset="@Url.ContentUrl(Model.CurrentPage.Image72)" media="(min-width: 72px)">
+			}
+			@Html.PropertyFor(model => model.CurrentPage.MainImage)
+		</picture>
+	</div>
+</section>

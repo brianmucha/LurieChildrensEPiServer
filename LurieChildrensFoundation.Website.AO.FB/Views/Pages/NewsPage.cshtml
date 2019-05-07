@@ -1,0 +1,106 @@
+﻿@using EPiServer.Editor;
+@using EPiServer.Web.Mvc.Html;
+
+@using LurieChildrensFoundation.AO.FB.Models.Pages;
+@using LurieChildrensFoundation.AO.FB.Models.ViewModels;
+
+@model EventPageViewModel<EventPage>
+@{ Layout = "~/Views/Shared/Layouts/FullWidth.cshtml"; }
+
+@if (Model.CurrentPage.UseSidebar)
+{
+	<section>
+		<div class="layout container">
+			<div class="row">
+				<div class="col-3">
+					@Html.PropertyFor(model => model.CurrentPage.SidebarContentArea)
+				</div>
+				<div class="col-9">
+					<div class="row">
+						<div class="col-12">
+							@Html.PropertyFor(model => model.CurrentPage.MastheadArea)
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+						</div>
+					</div>
+					<div class=" row">
+						<div class="col-12">
+							<div class="summary container">
+								<div class=" row">
+									<div class="col-4">
+										@if (PageEditing.PageIsInEditMode)
+										{
+											@Html.PropertyFor(model => model.CurrentPage.NewsDate)
+										}
+										else
+										{
+											<p>
+												@Html.PropertyFor(model => model.CurrentPage.NewsDate)
+											</p>
+										}
+									</div>
+									<div class="col-8">
+										<p>@Html.PropertyFor(model => model.CurrentPage.Summary)</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+}
+else
+{
+	<section>
+		<div class="layout container">
+			<div class="row">
+				<div class="col-12">
+					@Html.PropertyFor(model => model.CurrentPage.MastheadArea)
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					@Html.PropertyFor(model => model.CurrentPage.NewsDate)<br />
+					@Html.PropertyFor(model => model.CurrentPage.EventTime)<br />
+					@Html.PropertyFor(model => model.CurrentPage.EventLocation)<br />
+					@Html.PropertyFor(model => model.CurrentPage.EventSite)
+				</div>
+				<div class="col-6">
+					@Html.PropertyFor(model => model.CurrentPage.Summary)
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					@Html.PropertyFor(model => model.CurrentPage.MainContentArea)
+				</div>
+			</div>
+		</div>
+	</section>
+}
+
+<section class="debug">
+	<div class="layout container">
+		<div class="row">
+			<div class="col-12">
+				<h1>@Html.PropertyFor(model => model.CurrentPage.Name)</h1>
+				<p>@Html.PropertyFor(model => model.ViewModelProperty)</p>
+				<p>@Html.PropertyFor(model => model.ViewModelPropertyBase)</p>
+
+				<p>@Html.PropertyFor(model => model.SiteLogo.Alt)</p>
+				<p>@Url.ContentUrl(Model.SiteLogo.Src)</p>
+
+				<p>@Url.ContentUrl(Model.DonateLink.Href)</p>
+			</div>
+		</div>
+	</div>
+</section>

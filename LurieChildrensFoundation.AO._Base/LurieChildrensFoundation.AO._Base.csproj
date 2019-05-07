@@ -188,11 +188,13 @@
     <Compile Include="Business\Initializations\FilterConfig.cs" />
     <Compile Include="Business\PageContextActionFilter.cs" />
     <Compile Include="Controllers\Pages\AOBasePageController.cs" />
+    <Compile Include="Controllers\Pages\AONewsPageController.cs" />
     <Compile Include="Controllers\Pages\AOStartPageController.cs" />
     <Compile Include="Controllers\Pages\AOLandingPageController.cs" />
     <Compile Include="Controllers\Pages\AOEventPageController.cs" />
     <Compile Include="Controllers\Pages\AOStandardPageController.cs" />
     <Compile Include="Models\Blocks\AOBaseBlock.cs" />
+    <Compile Include="Models\Blocks\AONewsListBlock.cs" />
     <Compile Include="Models\Blocks\AOEventListBlock.cs" />
     <Compile Include="Models\Blocks\AOHeroBlock.cs" />
     <Compile Include="Models\Blocks\AOSidebarLinkListBlock.cs" />
@@ -207,6 +209,7 @@
     <Compile Include="Models\Media\AOImageFile.cs" />
     <Compile Include="Models\Media\AOVideoFile.cs" />
     <Compile Include="Models\Pages\AOBasePage.cs" />
+    <Compile Include="Models\Pages\AONewsPage.cs" />
     <Compile Include="Models\Pages\AOEventPage.cs" />
     <Compile Include="Models\AOGroupDefinitions.cs" />
     <Compile Include="Models\Pages\AOStartPage.cs" />
@@ -218,6 +221,7 @@
     <Compile Include="Models\PropertyTypes\AOLinkItemType.cs" />
     <Compile Include="Models\ViewModels\AOBaseBlockViewModel.cs" />
     <Compile Include="Models\ViewModels\AOBasePageViewModel.cs" />
+    <Compile Include="Models\ViewModels\AONewsPageViewModel.cs" />
     <Compile Include="Models\ViewModels\AOEventPageViewModel.cs" />
     <Compile Include="Models\ViewModels\AOStartPageViewModel.cs" />
     <Compile Include="Models\ViewModels\IAOBaseBlockViewModel.cs" />

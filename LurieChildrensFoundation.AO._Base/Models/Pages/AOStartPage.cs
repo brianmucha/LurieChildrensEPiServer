@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAnnotations;
+using EPiServer.Shell.ObjectEditing;
 using EPiServer.SpecializedProperties;
 using EPiServer.Web;
 
@@ -48,8 +49,54 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 			Description = "A full page width main image.",
 			GroupName = AOCustomTabNames.Masthead,
 			Order = 40)]
+		[DefaultDragAndDropTarget]
 		[UIHint(UIHint.Image)]
 		public virtual ContentReference MainImage { get; set; }
+
+		[Display(
+			Name = "Responsive Image (72px or more)",
+			Description = "Optional. An alternate sized image for 72px or more, when supported.",
+			GroupName = AOCustomTabNames.Masthead,
+			Order = 50)]
+		[DefaultDragAndDropTarget]
+		[UIHint(UIHint.Image)]
+		public virtual ContentReference Image72 { get; set; }
+
+		[Display(
+			Name = "Responsive Image (320px or more)",
+			Description = "Optional. An alternate sized image for 320px or more, when supported.",
+			GroupName = AOCustomTabNames.Masthead,
+			Order = 51)]
+		[DefaultDragAndDropTarget]
+		[UIHint(UIHint.Image)]
+		public virtual ContentReference Image320 { get; set; }
+
+		[Display(
+			Name = "Responsive Image (576px or more)",
+			Description = "Optional. An alternate sized image for 576px or more, when supported.",
+			GroupName = AOCustomTabNames.Masthead,
+			Order = 52)]
+		[DefaultDragAndDropTarget]
+		[UIHint(UIHint.Image)]
+		public virtual ContentReference Image576 { get; set; }
+
+		[Display(
+			Name = "Responsive Image (768px or more)",
+			Description = "Optional. An alternate sized image for 768px or more, when supported.",
+			GroupName = AOCustomTabNames.Masthead,
+			Order = 53)]
+		[DefaultDragAndDropTarget]
+		[UIHint(UIHint.Image)]
+		public virtual ContentReference Image768 { get; set; }
+
+		[Display(
+			Name = "Responsive Image (992px or more)",
+			Description = "Optional. An alternate sized image for 992px or more, when supported.",
+			GroupName = AOCustomTabNames.Masthead,
+			Order = 54)]
+		[DefaultDragAndDropTarget]
+		[UIHint(UIHint.Image)]
+		public virtual ContentReference Image992 { get; set; }
 
 		/* ********** Site-Wide Settings Tab ********** */
 

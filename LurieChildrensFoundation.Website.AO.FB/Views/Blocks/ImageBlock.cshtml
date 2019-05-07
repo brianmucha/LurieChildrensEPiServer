@@ -3,7 +3,33 @@
 @model ImageBlock
 
 <div class="image-responsive">
-	<img alt="@Model.Alt" src="@Url.ContentUrl(Model.Image)" />
+	<picture>
+		@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.Image992)))
+		{
+			<source srcset="@Url.ContentUrl(Model.Image992)" media="(min-width: 992px)">
+		}
+		@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.Image768)))
+		{
+			<source srcset="@Url.ContentUrl(Model.Image768)" media="(min-width: 768px)">
+		}
+		@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.Image576)))
+		{
+			<source srcset="@Url.ContentUrl(Model.Image576)" media="(min-width: 576px)">
+		}
+		@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.Image320)))
+		{
+			<source srcset="@Url.ContentUrl(Model.Image320)" media="(min-width: 320px)">
+		}
+		@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.Image72)))
+		{
+			<source srcset="@Url.ContentUrl(Model.Image72)" media="(min-width: 72px)">
+		}
+		<img alt="@Model.Alt" src="@Url.ContentUrl(Model.Image)" align="middle" class="@(Model.Autoscale ? "autoscale" : null)" />
+	</picture>
+	@if (Model.Overtext != null)
+	{
+		<div class="overtext">@Model.Overtext</div>
+	}
 	@if (Model.Caption != null)
 	{
 		<div class="caption">@Model.Caption</div>

@@ -13,7 +13,29 @@
 			<h3>@Html.PropertyFor(model => model.CurrentPage.SubHeadline)</h3>
 			<p>@Html.PropertyFor(model => model.CurrentPage.ShortText)</p>
 		</div>
-		@Html.PropertyFor(model => model.CurrentPage.MainImage)
+		<picture>
+			@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.CurrentPage.Image992)))
+			{
+				<source srcset="@Url.ContentUrl(Model.CurrentPage.Image992)" media="(min-width: 992px)">
+			}
+			@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.CurrentPage.Image768)))
+			{
+				<source srcset="@Url.ContentUrl(Model.CurrentPage.Image768)" media="(min-width: 768px)">
+			}
+			@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.CurrentPage.Image576)))
+			{
+				<source srcset="@Url.ContentUrl(Model.CurrentPage.Image576)" media="(min-width: 576px)">
+			}
+			@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.CurrentPage.Image320)))
+			{
+				<source srcset="@Url.ContentUrl(Model.CurrentPage.Image320)" media="(min-width: 320px)">
+			}
+			@if (!String.IsNullOrWhiteSpace(Url.ContentUrl(Model.CurrentPage.Image72)))
+			{
+				<source srcset="@Url.ContentUrl(Model.CurrentPage.Image72)" media="(min-width: 72px)">
+			}
+			@Html.PropertyFor(model => model.CurrentPage.MainImage)
+		</picture>
 	</div>
 </section>
 

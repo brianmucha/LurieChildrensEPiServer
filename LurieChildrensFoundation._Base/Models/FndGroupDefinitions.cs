@@ -13,7 +13,10 @@ namespace LurieChildrensFoundation._Base.Models
 		[Display(Order = 20)]
 		public const string MetaData = "Metadata";
 
-		[Display(Order = 50)]
+		[Display(Order = 30)]
 		public const string Settings = SystemTabNames.Settings;
+
+		[Display(Order = 40)]
+		public const string SiteSettings = "Site-Wide Settings";
 	}
 }

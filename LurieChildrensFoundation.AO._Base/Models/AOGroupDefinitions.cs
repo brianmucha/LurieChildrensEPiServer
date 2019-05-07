@@ -9,13 +9,16 @@ namespace LurieChildrensFoundation.AO._Base.Models
 	[GroupDefinitions]
 	public class AOCustomTabNames : FndCustomTabNames
 	{
-		[Display(Order = 100)]
-		public const string Masthead = "Masthead";
-
-		[Display(Order = 110)]
-		public const string SiteSettings = "Site-Wide Settings";
-
 		[Display(Order = 5)]
 		public const string EventInfo = "Event Info";
+
+		[Display(Order = 5)]
+		public const string Summary = "Summary";
+
+		[Display(Order = 20)]
+		public const string ResponsiveImages = "Responsive Images";
+
+		[Display(Order = 100)]
+		public const string Masthead = "Masthead";
 	}
 }

@@ -26,18 +26,82 @@ namespace LurieChildrensFoundation.AO._Base.Models.Blocks
 			Name = "Alt Attribute",
 			Description = "Specifies an alternate text for an image, if the image cannot be displayed.",
 			GroupName = AOCustomTabNames.Content,
-			Order = 20)]
+			Order = 30)]
 		[CultureSpecific]
 		public virtual String Alt { get; set; }
 
 		[Display(
-			Name = "Caption",
-			Description = "The optional caption for the image.",
+			Name = "Autoscale",
+			Description = "Automatically scale the image at mobile sizes. This makes the image larger at narrow widths and trims sides in order to preserve a reasonable image height.",
 			GroupName = AOCustomTabNames.Content,
-			Order = 30)]
+			Order = 40)]
+		[CultureSpecific]
+		[UIHint(UIHint.Textarea)]
+		public virtual Boolean Autoscale { get; set; }
+
+		[Display(
+			Name = "Caption",
+			Description = "An optional caption for the image.",
+			GroupName = AOCustomTabNames.Content,
+			Order = 50)]
 		[CultureSpecific]
 		[UIHint(UIHint.Textarea)]
 		public virtual String Caption { get; set; }
+
+		[Display(
+			Name = "Overtext",
+			Description = "An optional text block displayed with the image as the background.",
+			GroupName = AOCustomTabNames.Content,
+			Order = 60)]
+		[CultureSpecific]
+		[UIHint(UIHint.Textarea)]
+		public virtual String Overtext { get; set; }
+
+		[Display(
+			Name = "Responsive Image (72px or more)",
+			Description = "Optional. An alternate sized image for 72px or more, when supported.",
+			GroupName = AOCustomTabNames.ResponsiveImages,
+			Order = 20)]
+		[DefaultDragAndDropTarget]
+		[UIHint(UIHint.Image)]
+		public virtual ContentReference Image72 { get; set; }
+
+		[Display(
+			Name = "Responsive Image (320px or more)",
+			Description = "Optional. An alternate sized image for 320px or more, when supported.",
+			GroupName = AOCustomTabNames.ResponsiveImages,
+			Order = 21)]
+		[DefaultDragAndDropTarget]
+		[UIHint(UIHint.Image)]
+		public virtual ContentReference Image320 { get; set; }
+
+		[Display(
+			Name = "Responsive Image (576px or more)",
+			Description = "Optional. An alternate sized image for 576px or more, when supported.",
+			GroupName = AOCustomTabNames.ResponsiveImages,
+			Order = 22)]
+		[DefaultDragAndDropTarget]
+		[UIHint(UIHint.Image)]
+		public virtual ContentReference Image576 { get; set; }
+
+		[Display(
+			Name = "Responsive Image (768px or more)",
+			Description = "Optional. An alternate sized image for 768px or more, when supported.",
+			GroupName = AOCustomTabNames.ResponsiveImages,
+			Order = 23)]
+		[DefaultDragAndDropTarget]
+		[UIHint(UIHint.Image)]
+		public virtual ContentReference Image768 { get; set; }
+
+		[Display(
+			Name = "Responsive Image (992px or more)",
+			Description = "Optional. An alternate sized image for 992px or more, when supported.",
+			GroupName = AOCustomTabNames.ResponsiveImages,
+			Order = 24)]
+		[DefaultDragAndDropTarget]
+		[UIHint(UIHint.Image)]
+		public virtual ContentReference Image992 { get; set; }
+
 
 	}
 }
