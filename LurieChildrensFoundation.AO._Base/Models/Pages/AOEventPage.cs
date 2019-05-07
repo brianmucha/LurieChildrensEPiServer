@@ -48,7 +48,7 @@ namespace LurieChildrensFoundation.AO._Base.Models.Pages
 			Description = "",
 			GroupName = AOCustomTabNames.EventInfo,
 			Order = 15)]
-		[UIHint("DateOnly")]
+		[UIHint("DateLong")]
 		[Required]
 		public virtual DateTime EventDate { get; set; }
 

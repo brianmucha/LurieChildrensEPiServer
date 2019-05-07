@@ -576,6 +576,25 @@ section .summary {
 		height: auto;
 	}
 
+/* ***** NewsList Block ***** */
+
+.NewsListItem {
+	border: 1px solid #135086;
+	background: #edf6ff;
+	margin-bottom: 1rem;
+	line-height: 1.2;
+}
+
+	.NewsListItem h2 {
+		padding-top: .25rem;
+		font-size: 3.2rem;
+	}
+
+	.NewsListItem .Thumb img {
+		width: 100%;
+		height: auto;
+	}
+
 /* ***** Image Blocks ***** */
 
 div.image-responsive {
