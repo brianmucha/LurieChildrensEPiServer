@@ -7,23 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation._B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.AO._Base", "LurieChildrensFoundation.AO._Base\LurieChildrensFoundation.AO._Base.csproj", "{B5621406-63C6-442E-9A6A-BCFC63A42525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.AO.CRF", "LurieChildrensFoundation.AO.CRF\LurieChildrensFoundation.AO.CRF.csproj", "{C8A40CF5-C5BC-4D98-BA1A-0DC9303CF6F4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.AO.CRFJB", "LurieChildrensFoundation.AO.CRFJB\LurieChildrensFoundation.AO.CRFJB.csproj", "{22A8A80B-11FC-40DE-BFEF-7E26F1EAFD00}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.AO.CSB", "LurieChildrensFoundation.AO.CSB\LurieChildrensFoundation.AO.CSB.csproj", "{348FCC44-8D32-43F9-90D9-195F93CB2354}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.AO.FB", "LurieChildrensFoundation.AO.FB\LurieChildrensFoundation.AO.FB.csproj", "{56221097-1FAE-40DC-A2EA-222CBC56FE05}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.Home", "LurieChildrensFoundation.Home\LurieChildrensFoundation.Home.csproj", "{E36CB43D-F1BB-42F7-A21B-A713D908D825}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.Website.Home", "LurieChildrensFoundation.Website.Home\LurieChildrensFoundation.Website.Home.csproj", "{632F2724-F996-4EBC-811A-3CCCDB85D7C9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.Website.AO.CRF", "LurieChildrensFoundation.Website.AO.CRF\LurieChildrensFoundation.Website.AO.CRF.csproj", "{0083078C-2C02-476E-B368-CEE6BC4E9751}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.Website.AO.CRFJB", "LurieChildrensFoundation.Website.AO.CRFJB\LurieChildrensFoundation.Website.AO.CRFJB.csproj", "{C7DA0570-D5E7-4EB7-8B35-46EF60CBDCEF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.Website.AO.CSB", "LurieChildrensFoundation.Website.AO.CSB\LurieChildrensFoundation.Website.AO.CSB.csproj", "{67551ABB-ECD0-4F28-97FC-EF38B80C57EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LurieChildrensFoundation.Website.AO.FB", "LurieChildrensFoundation.Website.AO.FB\LurieChildrensFoundation.Website.AO.FB.csproj", "{3F1FE0C2-C129-4183-886A-D3C62FF32862}"
 EndProject
@@ -41,18 +29,6 @@ Global
 		{B5621406-63C6-442E-9A6A-BCFC63A42525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5621406-63C6-442E-9A6A-BCFC63A42525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5621406-63C6-442E-9A6A-BCFC63A42525}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8A40CF5-C5BC-4D98-BA1A-0DC9303CF6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8A40CF5-C5BC-4D98-BA1A-0DC9303CF6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8A40CF5-C5BC-4D98-BA1A-0DC9303CF6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8A40CF5-C5BC-4D98-BA1A-0DC9303CF6F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22A8A80B-11FC-40DE-BFEF-7E26F1EAFD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22A8A80B-11FC-40DE-BFEF-7E26F1EAFD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22A8A80B-11FC-40DE-BFEF-7E26F1EAFD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22A8A80B-11FC-40DE-BFEF-7E26F1EAFD00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{348FCC44-8D32-43F9-90D9-195F93CB2354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{348FCC44-8D32-43F9-90D9-195F93CB2354}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{348FCC44-8D32-43F9-90D9-195F93CB2354}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{348FCC44-8D32-43F9-90D9-195F93CB2354}.Release|Any CPU.Build.0 = Release|Any CPU
 		{56221097-1FAE-40DC-A2EA-222CBC56FE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{56221097-1FAE-40DC-A2EA-222CBC56FE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56221097-1FAE-40DC-A2EA-222CBC56FE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,18 +41,6 @@ Global
 		{632F2724-F996-4EBC-811A-3CCCDB85D7C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{632F2724-F996-4EBC-811A-3CCCDB85D7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{632F2724-F996-4EBC-811A-3CCCDB85D7C9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0083078C-2C02-476E-B368-CEE6BC4E9751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0083078C-2C02-476E-B368-CEE6BC4E9751}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0083078C-2C02-476E-B368-CEE6BC4E9751}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0083078C-2C02-476E-B368-CEE6BC4E9751}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7DA0570-D5E7-4EB7-8B35-46EF60CBDCEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7DA0570-D5E7-4EB7-8B35-46EF60CBDCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7DA0570-D5E7-4EB7-8B35-46EF60CBDCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7DA0570-D5E7-4EB7-8B35-46EF60CBDCEF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{67551ABB-ECD0-4F28-97FC-EF38B80C57EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67551ABB-ECD0-4F28-97FC-EF38B80C57EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67551ABB-ECD0-4F28-97FC-EF38B80C57EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67551ABB-ECD0-4F28-97FC-EF38B80C57EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3F1FE0C2-C129-4183-886A-D3C62FF32862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F1FE0C2-C129-4183-886A-D3C62FF32862}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F1FE0C2-C129-4183-886A-D3C62FF32862}.Release|Any CPU.ActiveCfg = Release|Any CPU
