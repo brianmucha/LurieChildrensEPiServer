@@ -4,7 +4,7 @@
 @using LurieChildrensFoundation.AO.FB.Models.Pages;
 @using LurieChildrensFoundation.AO.FB.Models.ViewModels;
 
-@model EventPageViewModel<EventPage>
+@model NewsPageViewModel<NewsPage>
 @{ Layout = "~/Views/Shared/Layouts/FullWidth.cshtml"; }
 
 @if (Model.CurrentPage.UseSidebar)
@@ -70,10 +70,7 @@ else
 			</div>
 			<div class="row">
 				<div class="col-6">
-					@Html.PropertyFor(model => model.CurrentPage.NewsDate)<br />
-					@Html.PropertyFor(model => model.CurrentPage.EventTime)<br />
-					@Html.PropertyFor(model => model.CurrentPage.EventLocation)<br />
-					@Html.PropertyFor(model => model.CurrentPage.EventSite)
+					@Html.PropertyFor(model => model.CurrentPage.Date)
 				</div>
 				<div class="col-6">
 					@Html.PropertyFor(model => model.CurrentPage.Summary)
